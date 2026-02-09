@@ -26,9 +26,10 @@
                                 <h3 class="card-title">Trainer: {{ $feedback->trainer_name }}</h3>
                             </div>
                             <div class="card-body">
-                                {{ $feedback->feedback }}
-                                <br>
-                                <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
+                                <blockquote class="blockquote blockquote-color-bg-light withripple">
+                                    {{ $feedback->feedback }}
+                                    <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
+                                </blockquote>
                             </div>
                         </div>
                     </li>
@@ -36,9 +37,13 @@
                     @endforelse
                 </ul>
             </div>
-            <div class="d-flex justify-content-center">
-                {!! $feedbacks->withQueryString()->links('pagination::bootstrap-5') !!}
-            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination pagination-warning">
+                    <div class="d-flex justify-content-center">
+                        {!! $feedbacks->withQueryString()->links('pagination::bootstrap-5') !!}
+                    </div>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>

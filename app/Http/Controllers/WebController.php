@@ -20,7 +20,7 @@ class WebController extends Controller
         $title = "Empire Data Systems | Student Feedback";
         $description = "SQL Server Training - Hosted By Daniel AG, 16 Years Experienced Data Architect - 90 Hours - $750 per Student";
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, SQL Server BI Training, SQL Server Performance Tuning Training, Hadoop Training, Bigdata Training, SSAS Training, SSRS Training, SSIS Training";
-        $feedbacks = StudentFeedback::latest()->paginate(25);
+        $feedbacks = StudentFeedback::where("status", 1)->latest()->paginate(25);
         return view('feedbacks', compact('title', 'description', 'keywords', 'feedbacks'));
     }
 }
