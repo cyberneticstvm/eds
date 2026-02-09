@@ -1,10 +1,10 @@
 <div class="collapse navbar-collapse" id="ms-navbar">
     <ul class="navbar-nav">
-        <li class="nav-item dropdown active">
-            <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="home">Home</a>
+        <li class="nav-item active">
+            <a href="#" class="animated fadeIn animation-delay-7" data-name="home">Home</a>
         </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="about">About Us</a>
+        <li class="nav-item">
+            <a href="#" class="animated fadeIn animation-delay-7" data-name="about">About Us</a>
         </li>
         <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="page">Faqs <i class="zmdi zmdi-chevron-down"></i></a>
@@ -29,17 +29,17 @@
                 <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">AWS SOLUTIONS ARCHITECT ASSOCIATE</a></li>
             </ul>
         </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="video">Videos</a>
+        <li class="nav-item">
+            <a href="#" class="animated fadeIn animation-delay-7" data-name="video">Videos</a>
         </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="feedback">Student Feedback</a>
+        <li class="nav-item">
+            <a href="{{ route('student.feedbacks') }}" class="animated fadeIn animation-delay-7" data-name="feedback">Student Feedback</a>
         </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Blogs</a>
+        <li class="nav-item">
+            <a href="#" class="animated fadeIn animation-delay-7" data-name="blog">Blogs</a>
         </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="contact">Contact Us</a>
+        <li class="nav-item">
+            <a href="#" class="animated fadeIn animation-delay-7" data-name="contact">Contact Us</a>
         </li>
     </ul>
 </div>
