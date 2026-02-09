@@ -12,123 +12,41 @@
                             <div class="carousel-caption">
                                 <div class="ms-hero-material-text-container">
                                     <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                                        <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">The <strong>power design</strong> amazing projects</h1>
-                                        <h2 class="animated fadeInLeft animation-delay-18">The most customizable <span class="color-warning">material design</span> template.</h2>
+                                        <h1 class="animated fadeInLeft animation-delay-15 font-smoothing"><strong class="color-info">Daniel AG</strong></h1>
+                                        <h2 class="animated fadeInLeft animation-delay-18">#1 <span class="color-warning">Microsoft Azure, SQL Server AI and AWS Trainer</span> in USA !!!.</h2>
                                     </header>
 
                                     <ul class="ms-hero-material-list">
                                         <li class="">
                                             <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp"><i class="zmdi zmdi-airplane"></i></span>
+                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp"><i class="zmdi zmdi-city"></i></span>
                                             </div>
 
-                                            <div class="ms-list-text animated fadeInRight animation-delay-19">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, fugit sit nesciunt cum rerum iusto.</div>
+                                            <div class="ms-list-text animated fadeInRight animation-delay-19">US Based Database/Azure/AWS/AI Architect with 16 Years’ Extensive Experience in Database Administration, SQL Programming, Business Intelligence Development, Azure Administration, Azure Fabric and Data Engineering etc..</div>
                                         </li>
                                         <li class="">
                                             <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-bike"></i></span>
+                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-local-activity"></i></span>
                                             </div>
 
-                                            <div class="ms-list-text animated fadeInRight animation-delay-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laborum dignissimos fuga maxime facere.</div>
+                                            <div class="ms-list-text animated fadeInRight animation-delay-21">Trained 3000+ Students Across US and Canada, Consistently Exceeding Student’s Expectations. Daniel’s 90 Hours Live Interactive Online Training cost only $750 per student.</div>
                                         </li>
                                         <li class="">
                                             <div class="ms-list-icon animated zoomInUp animation-delay-22">
                                                 <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-album"></i></span>
                                             </div>
 
-                                            <div class="ms-list-text animated fadeInRight animation-delay-23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sequi est repudianda.</div>
+                                            <div class="ms-list-text animated fadeInRight animation-delay-23">Call Daniel Directly @ <a href='tel:+12677181533'><span class="color-warning"> 267 718 1533</span></a> for Your Training Needs and Career Goals.</div>
                                         </li>
                                     </ul>
                                     <div class="ms-hero-material-buttons text-right">
                                         <div class="ms-hero-material-buttons text-right">
-                                            <a href="javascript:void(0);" class="btn btn-warning btn-raised animated fadeInLeft animation-delay-24 mr-2"><i class="zmdi zmdi-settings"></i> Personalize</a>
-                                            <a href="javascript:void(0);" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> Download</a>
+                                            <a href="#" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> View More</a>
                                         </div>
                                     </div>
                                 </div> <!-- ms-hero-material-text-container -->
                             </div>
                         </div>
-                        <div data-bs-interval="5000" class="carousel-item">
-                            <div class="carousel-caption">
-                                <div class="ms-hero-material-text-container">
-                                    <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                                        <h1 class="animated fadeInLeft animation-delay-15">A template with <strong>infinite</strong> possibilities</h1>
-                                        <h2 class="animated fadeInLeft animation-delay-18">Unlimited combinations to create <span class="color-warning">unique designs</span> .</h2>
-                                    </header>
-
-                                    <ul class="ms-hero-material-list">
-                                        <li class="">
-                                            <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-info shadow-3dp"><i class="zmdi zmdi-city"></i></span>
-                                            </div>
-
-                                            <div class="ms-list-text animated fadeInRight animation-delay-19">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, fugit sit nesciunt cum rerum iusto.</div>
-                                        </li>
-                                        <li class="">
-                                            <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-royal shadow-3dp"><i class="zmdi zmdi-cake"></i></span>
-                                            </div>
-
-                                            <div class="ms-list-text animated fadeInRight animation-delay-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laborum dignissimos fuga maxime facere.</div>
-                                        </li>
-                                        <li class="">
-                                            <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp"><i class="zmdi zmdi-coffee"></i></span>
-                                            </div>
-
-                                            <div class="ms-list-text animated fadeInRight animation-delay-23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sequi est repudianda.</div>
-                                        </li>
-                                    </ul>
-                                    <div class="ms-hero-material-buttons text-right">
-                                        <div class="ms-hero-material-buttons text-right">
-                                            <a href="javascript:void(0);" class="btn btn-warning btn-raised animated fadeInLeft animation-delay-24 mr-2"><i class="zmdi zmdi-settings"></i> Personalize</a>
-                                            <a href="javascript:void(0);" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> Download</a>
-                                        </div>
-                                    </div>
-                                </div> <!-- ms-hero-material-text-container -->
-                            </div>
-                        </div>
-                        <div data-bs-interval="5000" class="carousel-item">
-                            <div class="carousel-caption">
-                                <div class="ms-hero-material-text-container">
-                                    <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                                        <h1 class="animated fadeInLeft animation-delay-15">Commitment of <strong>monthly updates</strong>.</h1>
-                                        <h2 class="animated fadeInLeft animation-delay-18">There will soon be a version for <span class="color-warning">Bootstrap 4</span>.</h2>
-                                    </header>
-
-                                    <ul class="ms-hero-material-list">
-                                        <li class="">
-                                            <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-cutlery"></i></span>
-                                            </div>
-
-                                            <div class="ms-list-text animated fadeInRight animation-delay-19">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, fugit sit nesciunt cum rerum iusto.</div>
-                                        </li>
-                                        <li class="">
-                                            <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-info shadow-3dp"><i class="zmdi zmdi-dns"></i></span>
-                                            </div>
-
-                                            <div class="ms-list-text animated fadeInRight animation-delay-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laborum dignissimos fuga maxime facere.</div>
-                                        </li>
-                                        <li class="">
-                                            <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                                                <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-compass"></i></span>
-                                            </div>
-
-                                            <div class="ms-list-text animated fadeInRight animation-delay-23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sequi est repudianda.</div>
-                                        </li>
-                                    </ul>
-                                    <div class="ms-hero-material-buttons text-right">
-                                        <a href="javascript:void(0);" class="btn btn-warning btn-raised animated fadeInLeft animation-delay-24 mr-2"><i class="zmdi zmdi-settings"></i> Personalize</a>
-                                        <a href="javascript:void(0);" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> Download</a>
-                                    </div>
-                                </div> <!-- ms-hero-material-text-container -->
-                            </div>
-                        </div>
-
-
-
                         <div class="carousel-controls">
                             <!-- Controls -->
                             <a class="left carousel-control animated zoomIn animation-delay-30" role="button" data-bs-target="#carousel-hero" data-bs-slide="prev">
@@ -140,13 +58,6 @@
                                 <i class="zmdi zmdi-chevron-right"></i>
                                 <span class="visually-hidden">Next</span>
                             </a>
-
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-bs-target="#carousel-hero" data-bs-slide-to="0" class="animated fadeInUpBig animation-delay-27 active"></li>
-                                <li data-bs-target="#carousel-hero" data-bs-slide-to="1" class="animated fadeInUpBig animation-delay-28"></li>
-                                <li data-bs-target="#carousel-hero" data-bs-slide-to="2" class="animated fadeInUpBig animation-delay-29"></li>
-                            </ol>
                         </div>
                     </div>
                 </div>
@@ -155,7 +66,7 @@
 
             <div class="col-xl-6 col-lg-5">
                 <div class="ms-hero-img animated zoomInUp animation-delay-30">
-                    <img src="assets/img/demo/mock-imac-material2.png" alt="" class="img-fluid">
+                    <img src="{{ asset('/assets/img/demo/mock-imac-material2.png') }}" alt="" class="img-fluid">
 
                     <div id="carousel-hero-img" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="3000">
 
@@ -170,13 +81,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div data-bs-interval="3000" class="ms-hero-img-slider carousel-item active">
-                                <img src="assets/img/demo/hero1.png" alt="" class="img-fluid">
+                                <img src="{{ asset('/assets/img/demo/hero1.png') }}" alt="" class="img-fluid">
                             </div>
                             <div data-bs-interval="3000" class="ms-hero-img-slider carousel-item">
-                                <img src="assets/img/demo/hero3.png" alt="" class="img-fluid">
+                                <img src="{{ asset('/assets/img/demo/hero3.png') }}" alt="" class="img-fluid">
                             </div>
                             <div data-bs-interval="3000" class="ms-hero-img-slider carousel-item">
-                                <img src="assets/img/demo/hero2.png" alt="" class="img-fluid">
+                                <img src="{{ asset('/assets/img/demo/hero2.png') }}" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -187,7 +98,7 @@
 </div> <!-- ms-hero ms-hero-black -->
 
 <div class="container mt-4">
-    <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Know our amazing features</h2>
+    <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Know Our Comprehensive Training Programs</h2>
     <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Lorem ipsum dolor sit amet, <span class="color-primary">consectetur adipisicing</span> elit. Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p>
     <div class="row">
         <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-4">
