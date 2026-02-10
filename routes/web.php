@@ -18,4 +18,12 @@ Route::middleware(['web'])->group(function () {
         Route::get('sql-server-training-database-concept', 'sql_training_db_concept')->name('faq.sql.training.db.concept');
         Route::get('data-warehouse-concept', 'data_wh_concept')->name('faq.data.wh.concept');
     });
+    Route::prefix('courses')->controller(WebController::class)->group(function () {
+        Route::get('sql-server-dba-training', 'sql_server_dba')->name('course.sql.dba');
+        Route::get('sql-server-bi-training', 'sql_server_bi')->name('course.sql.bi');
+        Route::get('microsoft-azure-administration-training', 'azure_admin')->name('course.azure.admin');
+        Route::get('microsoft-azure-fabric-training', 'azure_fabric')->name('course.azure.fabric');
+        Route::get('microsoft-azure-ai-solution-training', 'azure_ai')->name('course.azure.ai');
+        Route::get('aws-solutions-architect-associate-training', 'aws_solution')->name('course.aws.solution');
+    });
 });

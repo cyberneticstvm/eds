@@ -24,6 +24,10 @@
 
     <link rel="stylesheet" href="{{ asset('/assets/css/style.light-blue-800.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('/assets/magnific-popup/magnific-popup.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
+
 
     <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.min.js"></script>
@@ -285,7 +289,10 @@
     <script src="{{ asset('/assets/js/app.min.js') }}"></script>
 
     <script src="{{ asset('/assets/js/pie.js') }}"></script>
+
     <script src="{{ asset('/assets/js/index.js') }}"></script>
+
+    <script src="{{ asset('/assets/magnific-popup/jquery.magnific-popup.js') }}"></script>
 
     <script type="text/javascript">
         var $zoho = $zoho || {};
@@ -303,6 +310,17 @@
         t = d.getElementsByTagName("script")[0];
         t.parentNode.insertBefore(s, t);
         d.write("<div id='zsiqwidget'></div>");
+    </script>
+    <script type="text/javascript">
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
     </script>
 </body>
 

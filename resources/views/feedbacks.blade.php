@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="card card-hero animated slideInUp animation-delay-8 mb-6">
-                <ul class="ms-timeline mt-5">
+                <ul class="ms-timeline">
                     @forelse($feedbacks as $key => $feedback)
                     <li class="ms-timeline-item wow materialUp">
                         <div class="ms-timeline-date">

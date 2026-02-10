@@ -18,15 +18,15 @@
                 <li><a class="dropdown-item" href="{{ route('faq.data.wh.concept') }}" class="dropdown-link">DATA WAREHOUSE CONCEPT</a></li>
             </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {{ (in_array(Route::currentRouteName(), ['course.sql.dba', 'course.sql.bi', 'course.azure.admin', 'course.azure.fabric', 'course.azure.ai', 'course.aws.solution'])) ? 'active' : '' }}">
             <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="page">Courses <i class="zmdi zmdi-chevron-down"></i></a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">SQL SERVER DBA + TSQL PROGRAMMING</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">SQL SERVER BI(SSIS, SSAS, SSRS, POWER BI, MDX, TA, DW, DAX)</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">MICROSOFT AZURE ADMINISTRATION</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">MICROSOFT AZURE FABRIC AND DATA ENGINEERING TRAINING</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">MICROSOFT AZURE AI SOLUTION</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">AWS SOLUTIONS ARCHITECT ASSOCIATE</a></li>
+                <li><a class="dropdown-item" href="{{ route('course.sql.dba') }}" class="dropdown-link">SQL SERVER DBA + TSQL PROGRAMMING</a></li>
+                <li><a class="dropdown-item" href="{{ route('course.sql.bi') }}" class="dropdown-link">SQL SERVER BI(SSIS, SSAS, SSRS, POWER BI, MDX, TA, DW, DAX)</a></li>
+                <li><a class="dropdown-item" href="{{ route('course.azure.admin') }}" class="dropdown-link">MICROSOFT AZURE ADMINISTRATION</a></li>
+                <li><a class="dropdown-item" href="{{ route('course.azure.fabric') }}" class="dropdown-link">MICROSOFT AZURE FABRIC AND DATA ENGINEERING TRAINING</a></li>
+                <li><a class="dropdown-item" href="{{ route('course.azure.ai') }}" class="dropdown-link">MICROSOFT AZURE AI SOLUTION</a></li>
+                <li><a class="dropdown-item" href="{{ route('course.aws.solution') }}" class="dropdown-link">AWS SOLUTIONS ARCHITECT ASSOCIATE</a></li>
             </ul>
         </li>
         <li class="nav-item">

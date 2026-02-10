@@ -39,12 +39,12 @@
                     <i class="zmdi zmdi-text-format"></i> Courses
                 </a>
                 <ul id="sc3" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch3" data-bs-parent="#slidebar-menu">
-                    <li><a href="page-about.html">SQL SERVER DBA + TSQL PROGRAMMING</a></li>
-                    <li><a href="page-team.html">SQL SERVER BI(SSIS, SSAS, SSRS, POWER BI, MDX, TA, DW, DAX)</a></li>
-                    <li><a href="page-product.html">MICROSOFT AZURE ADMINISTRATION</a></li>
-                    <li><a href="page-services.html">MICROSOFT AZURE FABRIC AND DATA ENGINEERING TRAINING</a></li>
-                    <li><a href="page-faq.html">MICROSOFT AZURE AI SOLUTION</a></li>
-                    <li><a href="page-timeline_left.html">AWS SOLUTIONS ARCHITECT ASSOCIATE</a></li>
+                    <li><a href="{{ route('course.sql.dba') }}">SQL SERVER DBA + TSQL PROGRAMMING</a></li>
+                    <li><a href="{{ route('course.sql.bi') }}">SQL SERVER BI(SSIS, SSAS, SSRS, POWER BI, MDX, TA, DW, DAX)</a></li>
+                    <li><a href="{{ route('course.azure.admin') }}">MICROSOFT AZURE ADMINISTRATION</a></li>
+                    <li><a href="{{ route('course.azure.fabric') }}">MICROSOFT AZURE FABRIC AND DATA ENGINEERING TRAINING</a></li>
+                    <li><a href="{{ route('course.azure.ai') }}">MICROSOFT AZURE AI SOLUTION</a></li>
+                    <li><a href="{{ route('course.aws.solution') }}">AWS SOLUTIONS ARCHITECT ASSOCIATE</a></li>
                 </ul>
             </li>
             <li class="card" role="tab">
