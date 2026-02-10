@@ -130,111 +130,135 @@
         <aside class="ms-footbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 ms-footer-col">
+                    <div class="col-md-4 ms-footer-col">
                         <div class="ms-footbar-block">
                             <h3 class="ms-footbar-title">Sitemap</h3>
                             <ul class="list-unstyled ms-icon-list three_cols">
-                                <li><a href="index.html"><i class="zmdi zmdi-home"></i> Home</a></li>
-                                <li><a href="page-blog.html"><i class="zmdi zmdi-edit"></i> Blog</a></li>
-                                <li><a href="page-blog.html"><i class="zmdi zmdi-image-o"></i> Portafolio</a></li>
-                                <li><a href="portfolio-filters_sidebar.html"><i class="zmdi zmdi-case"></i> Works</a></li>
-                                <li><a href="page-timeline_left2.html"><i class="zmdi zmdi-time"></i> Timeline</a></li>
-                                <li><a href="page-pricing.html"><i class="zmdi zmdi-money"></i> Pricing</a></li>
-                                <li><a href="page-about.html"><i class="zmdi zmdi-favorite-outline"></i> About Us</a></li>
-                                <li><a href="page-team2.html"><i class="zmdi zmdi-accounts"></i> Our Team</a></li>
-                                <li><a href="page-services.html"><i class="zmdi zmdi-face"></i> Services</a></li>
-                                <li><a href="page-faq2.html"><i class="zmdi zmdi-help"></i> FAQ</a></li>
-                                <li><a href="page-login2.html"><i class="zmdi zmdi-lock"></i> Login</a></li>
-                                <li><a href="page-contact.html"><i class="zmdi zmdi-email"></i> Contact</a></li>
+                                <li>
+                                    <a href="index.html">
+                                        <i class="zmdi zmdi-home"></i> Home</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">
+                                        <i class="zmdi zmdi-edit"></i>About Us</a>
+                                </li>
+                                <li>
+                                    <a href="why-we-are-in-usa.html">
+                                        <i class="zmdi zmdi-image-o"></i>FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="sql-server-dba-training.html">
+                                        <i class="zmdi zmdi-case"></i>Courses</a>
+                                </li>
+                                <li>
+                                    <a href="our-live-class-videos.html">
+                                        <i class="zmdi zmdi-time"></i>Videos</a>
+                                </li>
+                                <li>
+                                    <a href="students-feedback.html">
+                                        <i class="zmdi zmdi-money"></i>Feedback</a>
+                                </li>
+                                <li>
+                                    <a href="sql-server-training-blogs.html">
+                                        <i class="zmdi zmdi-favorite-outline"></i>Blog</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">
+                                        <i class="zmdi zmdi-accounts"></i>Contact Us</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="ms-footbar-block">
                             <h3 class="ms-footbar-title">Subscribe</h3>
-                            <p class="">Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.</p>
-                            <form>
+                            <p class="">Your career is your responsibility. Please subscribe and stay in touch. Call me directly @ <a href="tel: +1267 718 1533" class='color-warning'>267 718 1533</a> with any of your questions - Daniel AG</p>
+                            <form name="frm-subscription" id="frm-subscription">
                                 <div class="form-group label-floating mt-2 mb-1">
                                     <div class="input-group ms-input-subscribe">
-                                        <label class="control-label" for="ms-subscribe"><i class="zmdi zmdi-email"></i> Email Adress</label>
-                                        <input type="email" id="ms-subscribe" class="form-control">
+                                        <label class="control-label" for="ms-subscribe">
+                                            <i class="zmdi zmdi-email"></i> Email Adress</label>
+                                        <input type="email" name="txt-subscribe" id="txt-subscribe" class="form-control" required>
                                     </div>
                                 </div>
-                                <button class="ms-subscribre-btn" type="button">Subscribe</button>
+                                <button class="ms-subscribre-btn" type="submit" name="btn-subscribe" id="btn-subscribe">Subscribe</button>
                             </form>
+                            <div class="msg-sub"></div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
+                    <div class="col-md-5 col-sm-7 ms-footer-col ms-footer-alt-color">
                         <div class="ms-footbar-block">
-                            <h3 class="ms-footbar-title text-center mb-2">Last Articles</h3>
+                            <h3 class="ms-footbar-title text-center mb-2">Contact Daniel</h3>
                             <div class="ms-footer-media">
-                                <div class="media">
-                                    <div class="media-left media-middle">
-                                        <a href="javascript:void(0)">
-                                            <img class="media-object media-object-circle" src="assets/img/demo/p75.jpg" alt="...">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><a href="javascript:void(0)">Lorem ipsum dolor sit expedita cumque amet consectetur adipisicing repellat cumque amet consectetur</a></h4>
-                                        <div class="media-footer">
-                                            <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                                            <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">Design</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left media-middle">
-                                        <a href="javascript:void(0)">
-                                            <img class="media-object media-object-circle" src="assets/img/demo/p75.jpg" alt="...">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><a href="javascript:void(0)">Labore ut esse Duis consectetur expedita cumque ullamco ad dolor cumque amet consectetur veniam velit</a></h4>
-                                        <div class="media-footer">
-                                            <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                                            <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">News</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left media-middle">
-                                        <a href="javascript:void(0)">
-                                            <img class="media-object media-object-circle" src="assets/img/demo/p75.jpg" alt="...">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><a href="javascript:void(0)">voluptates cumque amet consectetur deserunt ducimus expedita cumque quaerat molestiae labore</a></h4>
-                                        <div class="media-footer">
-                                            <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                                            <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">Productivity</a></span>
-                                        </div>
-                                    </div>
+                                <div class="card-block">
+                                    <form name="frm-contact" id="frm-contact" class="form-horizontal">
+                                        <fieldset class="text-left">
+                                            <div class="form-group is-empty">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control" name="txt-name" id="txt-name" placeholder="Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group is-empty">
+                                                <div class="col-md-12">
+                                                    <input type="email" class="form-control" name="txt-email" id="txt-email" placeholder="Email" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group is-empty">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control" name="txt-phone" id="txt-phone" placeholder="Phone" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group is-empty">
+                                                <div class="col-md-12">
+                                                    <textarea class="form-control" rows="5" name="txt-msg" id="txt-msg" placeholder="Your message..." required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-12 col-md-offset-3 text-center">
+                                                    <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary">Submit</button>
+                                                    <button type="button" name="btn-cancel" id="btn-cancel" class="btn btn-raised btn-danger">Cancel</button>
+                                                </div>
+                                                <div class='msg-contact'></div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-5 ms-footer-col ms-footer-text-right">
+                    <div class="col-md-3 col-sm-5 ms-footer-col text-right">
                         <div class="ms-footbar-block">
-                            <div class="ms-footbar-title">
-                                <span class="ms-logo ms-logo-white ms-logo-sm mr-1">M</span>
-                                <h3 class="no-m ms-site-title">Material<span>Style</span></h3>
+                            <div class="ms-footbar-title ">
+                                <span class="ms-logo ms-logo-white ms-logo-sm mr-1">E</span>
+                                <h3 class="no-m ms-site-title">Empire Data Systems
+                                    <span></span>
+                                </h3>
                             </div>
                             <address class="no-mb">
-                                <p><i class="color-danger-light zmdi zmdi-pin mr-1"></i> 795 Folsom Ave, Suite 600</p>
-                                <p><i class="color-warning-light zmdi zmdi-map mr-1"></i> San Francisco, CA 94107</p>
-                                <p><i class="color-info-light zmdi zmdi-email mr-1"></i> <a href="mailto:joe@example.com">example@domain.com</a></p>
-                                <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>+34 123 456 7890 </p>
-                                <p><i class="color-success-light fa fa-fax mr-1"></i>+34 123 456 7890 </p>
+                                <p>
+                                    <i class="color-danger-light zmdi zmdi-pin mr-1"></i>Empire Data Systems LLC
+                                </p>
+                                <p>256 Eagleview Blvd #387</p>
+                                <p>Exton, PA 19341, USA</p>
+                                <p>
+                                    <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+1 267 718 1533
+                                </p>
+                                <p>
+                                    <i class="color-info-light zmdi zmdi-email mr-1"></i>
+                                    <a href="mailto:ag.daniel@empiredatasystems.com">ag.daniel@empiredatasystems.com</a>
+                                </p>
                             </address>
                         </div>
-
                         <div class="ms-footbar-block">
                             <h3 class="ms-footbar-title">Social Media</h3>
                             <div class="ms-footbar-social">
-                                <a href="javascript:void(0)" class="btn-circle btn-facebook"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="javascript:void(0)" class="btn-circle btn-twitter"><i class="zmdi zmdi-twitter"></i></a>
-                                <a href="javascript:void(0)" class="btn-circle btn-youtube"><i class="zmdi zmdi-youtube-play"></i></a><br>
-                                <a href="javascript:void(0)" class="btn-circle btn-google"><i class="zmdi zmdi-google"></i></a>
-                                <a href="javascript:void(0)" class="btn-circle btn-instagram"><i class="zmdi zmdi-instagram"></i></a>
-                                <a href="javascript:void(0)" class="btn-circle btn-github"><i class="zmdi zmdi-github"></i></a>
+                                <a href="https://www.facebook.com/empiredatasystems/" class="btn-circle btn-facebook" target="_blank">
+                                    <i class="zmdi zmdi-facebook"></i>
+                                </a>
+                                <a href="https://www.youtube.com/user/EmpireDataSystems" class="btn-circle btn-youtube" target="_blank">
+                                    <i class="zmdi zmdi-youtube"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/danielthedba" class="btn-circle btn-linkedin" target="_blank">
+                                    <i class="zmdi zmdi-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -243,7 +267,8 @@
         </aside>
         <footer class="ms-footer">
             <div class="container">
-                <p>Copyright &copy; Material Style 2017</p>
+                <div class="policy"><a href="refund-policy.html" class="text-white">Refund Policy</a> | <a href="privacy-policy.html" class="text-white">Privacy Policy</a> | <a href="terms-and-conditions.html" class="text-white">Terms of Service</a></div>
+                <p>Copyright &copy; Empire Data Systems 2000-{{ date('Y') }}. All rights reserved.</p>
             </div>
         </footer>
 
@@ -259,6 +284,7 @@
 
     <script src="{{ asset('/assets/js/app.min.js') }}"></script>
 
+    <script src="{{ asset('/assets/js/pie.js') }}"></script>
     <script src="{{ asset('/assets/js/index.js') }}"></script>
 
     <script type="text/javascript">

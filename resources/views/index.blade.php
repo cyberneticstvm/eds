@@ -41,7 +41,7 @@
                                     </ul>
                                     <div class="ms-hero-material-buttons text-right">
                                         <div class="ms-hero-material-buttons text-right">
-                                            <a href="#" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> View More</a>
+                                            <a href="#know" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> View More</a>
                                         </div>
                                     </div>
                                 </div> <!-- ms-hero-material-text-container -->
@@ -97,234 +97,388 @@
     </div> <!-- container -->
 </div> <!-- ms-hero ms-hero-black -->
 
-<div class="container mt-4">
-    <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Know Our Comprehensive Training Programs</h2>
-    <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Lorem ipsum dolor sit amet, <span class="color-primary">consectetur adipisicing</span> elit. Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p>
+<div id="know" class="container mt-4">
     <div class="row">
-        <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-4">
-            <div class="text-center card-body">
-                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info"><i class="zmdi zmdi-cloud-outline"></i></span>
-                <h4 class="color-info">A feature title</h4>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                <a href="javascript:void(0)" class="btn btn-info btn-raised">Action here</a>
+        <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Know Our Comprehensive Training Programs</h2>
+        <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+            <div class="text-center card-block">
+                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-muted">
+                    <i class="zmdi zmdi-desktop-mac"></i>
+                </span>
+                <h4 class="color-primary">SQL Server DBA + SQL Programming + Azure SQL Training</h4>
+                <p class="">100 hour comprehensive training covering both database administration and TSQL Programming...</p>
+                <a href="sql-server-dba-training.html" class="btn btn-primary btn-raised">Know More</a>
             </div>
         </div>
-        <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-8">
-            <div class="text-center card-body">
-                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning"><i class="zmdi zmdi-desktop-mac"></i></span>
-                <h4 class="color-warning">A feature title</h4>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                <a href="javascript:void(0)" class="btn btn-warning btn-raised">Action here</a>
+        <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
+            <div class="text-center card-block">
+                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
+                    <i class="zmdi zmdi-cloud-outline"></i>
+                </span>
+                <h4 class="color-warning">SQL Server BI Training + Power BI Training</h4>
+                <p class="">70 hour comprehensive training covering SSIS, SSAS, MDX, SSRS, Power BI and Data Warehousing...</p>
+                <a href="sql-server-bi-training.html" class="btn btn-warning btn-raised">Know More</a>
             </div>
         </div>
-        <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-10">
-            <div class="text-center card-body">
-                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success"><i class="zmdi zmdi-download"></i></span>
-                <h4 class="color-success">A feature title</h4>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                <a href="javascript:void(0)" class="btn btn-success btn-raised">Action here</a>
+        <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
+            <div class="text-center card-block">
+                <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
+                    <i class="zmdi zmdi-file-text"></i>
+                </span>
+                <h4 class="color-danger">Microsoft Azure Administration Training</h4>
+                <p class="">50 hour comprehensive training on Implementation, Management and Monitoring of Microsoft Azure Assets.</p>
+                <a href="microsoft-azure-training.html" class="btn btn-danger btn-raised">Know More</a>
             </div>
         </div>
-        <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-6">
-            <div class="text-center card-body">
-                <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger"><i class="zmdi zmdi-flower-alt"></i></span>
-                <h4 class="color-danger">A feature title</h4>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                <a href="javascript:void(0)" class="btn btn-danger btn-raised">Action here</a>
+        <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
+            <div class="text-center card-block">
+                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-royal">
+                    <i class="zmdi zmdi-loupe"></i>
+                </span>
+                <h4 class="color-royal">Microsoft Azure Fabric<br> and Data Engineering</h4>
+                <p class="">40-hour comprehensive training covering Azure Databricks, Delta Lake, Data Factory, Synapse, HDInsight,...</p>
+                <a href="microsoft-azure-data-engineering.html" class="btn btn-royal btn-raised">Know More</a>
+            </div>
+        </div>
+        <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
+            <div class="text-center card-block">
+                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
+                    <i class="zmdi zmdi-chart-donut"></i>
+                </span>
+                <h4 class="color-warning">AWS Solutions Architect Associate</h4>
+                <p class="">Our AWS Solutions Architect – Associate course is intended for every aspersing individual who want to learn and perform an ..</p>
+                <a href="aws-solutions-architect-associate-training.html" class="btn btn-warning btn-raised">Know More</a>
+            </div>
+        </div>
+        <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
+            <div class="text-center card-block">
+                <span class="ms-icon ms-icon-circle ms-icon-xxlg color-white">
+                    <i class="zmdi zmdi-loupe"></i>
+                </span>
+                <h4 class="color-primary">Microsoft Azure AI Engineering</h4>
+                <p class="">Azure AI Services are transforming what was once considered unachievable into attainable projects. In this course, ...</p>
+                <a href="microsoft-azure-ai-solution-training.html" class="btn btn-primary btn-raised">Know More</a>
             </div>
         </div>
     </div>
 </div>
-<!-- container -->
-<div class="wrap wrap-mountain mt-6">
+<div class="wrap mt-6" style="background-color:#0277bd;">
     <div class="container">
-        <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">Material Design is a <strong>new way</strong> to create designs</h2>
         <div class="row">
-            <div class="col-lg-6 order-lg-2 mb-4  center-block">
-                <img src="assets/img/demo/mock.png" alt="" class="img-fluid center-block wow zoomIn animation-delay-12 ">
-            </div>
-            <div class="col-lg-6 order-lg-1 pr-6">
-                <p class="wow fadeInLeft animation-delay-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sint officiis odio tempora natus, sed voluptas facilis ullam suscipit. Ducimus quas, eius ut, dolores mollitia sapiente doloremque aliquid sequi eaque.</p>
-                <p class="wow fadeInLeft animation-delay-7">Adipisicing elit. Sapiente porro voluptatem rerum modi quibusdam accusantium nihil facere cupiditate quam! Ipsa.</p>
-                <p class="wow fadeInLeft animation-delay-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quasi voluptatem, similique corrupti necessitatibus nihil error, nemo delectus voluptates deserunt ducimus quaerat molestiae labore id repellat exercitationem asperiores neque quibusdam.</p>
-                <div class="text-center">
-                    <a href="javascript:void(0)" class="btn btn-warning btn-raised mr-1 wow flipInX animation-delay-14"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                    <a href="javascript:void(0)" class="btn btn-info btn-raised wow flipInX animation-delay-16"><i class="zmdi zmdi-case"></i> Button</a>
+            <div class="col-xs-12">
+                <div class="card animated fadeInUp animation-delay-7">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('/assets/img/demo/daniel-message.jpg') }}" alt="Message From Daniel AG" class="img-responsive">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-block pt-4 text-justify">
+                                <h3 class="color-primary">Message From Daniel AG</h3>
+                                <p class="dropcaps ">Hello students, I am Daniel AG, founder of Empire Data Systems LLC. I started my career as an SQL Server programmer way back in 1996 and I worked my way up in database domain. Today, I am working as Data Architect in Health Care Domain near Philadelphia, USA.</p>
+                                <p>I have attended numerous training programs as part of my professional career and most of them turned out to be below my expectations. In most cases, trainers did not have real-time experiences; they were not able to answer or understand questions based on real-time scenarios. Those subjective experiences led me to recognize the need for training programs conducted by IT professionals who have real-world experience and have a passion for teaching. That is why I started my own database training programs. In short, teaching is an art which I do very well.</p>
+                                <p>As a part-time trainer, I am guided by my passion for teaching and willingness to help students even after the training. My philosophy embedded into my program is that theory is important, but real-time scenarios and hands-on coding are essential to gaining skills needed to work successfully in the IT world.</p>
+                                <p>One key element to a successful IT career is how early you get trained in latest technologies. The more you wait, the higher the competition you are going to address.</p>
+                                <p>After all, your career is all about what you know and how well you market it.</p>
+                                <p>Please call me directly at 267.718.1533, and I would be more than happy to talk to you about your career goals and training needs.</p>
+                                <div class="pull-right"><img src="{{ asset('/assets/img/demo/signature-daniel.jpg') }}" class="img-responsive" alt="Signature"></div>
+                                <a href="https://www.facebook.com/empiredatasystems/" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-facebook" target="_blank">
+                                    <i class="zmdi zmdi-facebook"></i>
+                                </a>
+                                <a href="https://www.youtube.com/user/EmpireDataSystems" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-youtube" target="_blank">
+                                    <i class="zmdi zmdi-youtube"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/danielthedba" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-linkedin" target="_blank">
+                                    <i class="zmdi zmdi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container mt-6">
-    <h1 class="font-light">Technology that brings teams together</h1>
-    <p class="lead color-primary">— Intelligent apps that help you do your best work.
-    </p>
-    <div class="panel panel-light panel-flat">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
-            <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a href="#windows" aria-controls="windows" role="tab" data-bs-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-windows"></i> <span class="d-none d-md-inline">Windows</span></a></li>
-            <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a href="#macos" aria-controls="macos" role="tab" data-bs-toggle="tab" class="nav-link withoutripple active"><i class="zmdi zmdi-apple"></i> <span class="d-none d-md-inline">MacOS</span></a></li>
-            <li class="nav-item wow fadeInDown animation-delay-2" role="presentation"><a href="#linux" aria-controls="linux" role="tab" data-bs-toggle="tab" class="nav-link withoutripple"><i class="fa fa-linux"></i> <span class="d-none d-md-inline">Linux</span></a></li>
-            <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a href="#android" aria-controls="android" role="tab" data-bs-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-android"></i> <span class="d-none d-md-inline">Android</span></a></li>
-            <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a href="#ios" aria-controls="ios" role="tab" data-bs-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-smartphone-iphone"></i> <span class="d-none d-md-inline">IOS</span></a></li>
-        </ul>
-        <div class="panel-body">
-            <!-- Tab panes -->
-            <div class="tab-content mt-4">
-                <div role="tabpanel" class="tab-pane fade" id="windows">
-                    <div class="row">
-                        <div class="col-lg-6 order-lg-2">
-                            <img src="assets/img/demo/mock4.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                            <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                            <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                            <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                            <div class="">
-                                <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                                <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                            </div>
-                        </div>
-                    </div>
+<div class="container mt-4">
+    <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Statistics Says It All</h2>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="panel panel panel-info panel-dark text-center">
+                <div class="panel-body">
+                    <h2 class="counter">16</h2>
+                    <i class="fa fa-4x fa-coffee"></i>
+                    <p class="mt-2 no-mb lead small-caps">Years of Experience</p>
                 </div>
-                <div role="tabpanel" class="tab-pane active show fade" id="macos">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <img src="assets/img/demo/mock2.png" alt="" class="img-fluid wow animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6">
-                            <h3 class="text-normal wow animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                            <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                            <p class="lead lead-md wow animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                            <div class="">
-                                <a href="javascript:void(0)" class="btn btn-info btn-raised wow animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                                <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 wow animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="panel panel panel-danger panel-dark text-center">
+                <div class="panel-body">
+                    <h2 class="counter">3671</h2>
+                    <i class="fa fa-4x fa-heart"></i>
+                    <p class="mt-2 no-mb lead small-caps">Gratified Students</p>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="linux">
-                    <div class="row">
-                        <div class="col-lg-6 order-lg-2">
-                            <img src="assets/img/demo/mock5.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                            <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                            <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                            <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                            <div class="">
-                                <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                                <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="panel panel panel-warning panel-dark text-center">
+                <div class="panel-body">
+                    <h2 class="counter">112</h2>
+                    <i class="fa fa-4x fa-briefcase"></i>
+                    <p class="mt-2 no-mb lead small-caps">Training Batches</p>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="android">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <img src="assets/img/demo/mock6.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6">
-                            <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                            <p class="lead lead-md  animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                            <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                            <div class="">
-                                <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                                <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="panel panel panel-success panel-dark text-center">
+                <div class="panel-body">
+                    <h2 class="counter">9634</h2>
+                    <i class="fa fa-4x fa-group"></i>
+                    <p class="mt-2 no-mb lead small-caps">Training Hours</p>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="ios">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Daniel’s Coaching Team </h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card-warning wow zoomInUp animation-delay-5" style="visibility: visible; animation-name: zoomInUp;">
+                <div class="withripple zoom-img">
+                    <a href="javascript:void()" class="">
+                        <img src="{{ asset('/assets/img/demo/daniel.jpg') }}" alt="Daniel AG" class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-block">
+                    <span class="badge badge-warning pull-right">Data Architect</span>
+                    <h3 class="color-warning">Daniel AG</h3>
+                    <p>Daniel has 16 years’ extensive experience in SQL Server Administration, SQL Programming, Business Intelligence Development (SSAS, SSIS, SSRS), Data Visualization (Power BI) and Performance Tuning. Daniels’s diverse experience has given him a wide understanding of how Data Design, Data Architecture, Data Management, Data Administration, Security, and System Architecture all come together forming enterprise solutions. He is currently working as a Data Architect in Health Care Industry near Philadelphia, USA.</p>
                     <div class="row">
-                        <div class="col-lg-6 order-lg-2">
-                            <img src="assets/img/demo/mock3.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
+                        <div class="col-xs-6">
+                            <a href="https://www.facebook.com/empiredatasystems/" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-facebook" target="_blank">
+                                <i class="zmdi zmdi-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/EmpireDataSystems" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-youtube" target="_blank">
+                                <i class="zmdi zmdi-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/danielthedba" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-linkedin" target="_blank">
+                                <i class="zmdi zmdi-linkedin"></i>
+                            </a>
                         </div>
-                        <div class="col-lg-6 order-lg-1">
-                            <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                            <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                            <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                            <div class="">
-                                <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                                <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                            </div>
+                        <div class="col-xs-6 text-right">
+                            <a href="{{ route('about') }}" class="btn btn-raised btn-sm btn-warning">
+                                <i class="zmdi zmdi-account"></i>Profile</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- panel -->
-</div> <!-- container -->
+        <div class="col-md-4">
+            <div class="card card-success wow zoomInUp animation-delay-7" style="visibility: visible; animation-name: zoomInUp;">
+                <div class="withripple zoom-img">
+                    <a href="javascript:void()" class="">
+                        <img src="{{ asset('/assets/img/demo/Akshey_Jain.jpg') }}" alt="Akshay Jain" class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-block">
+                    <span class="badge badge-success pull-right">BI Architect</span>
+                    <h3 class="color-success">Akshey Jain</h3>
+                    <p>Akshey has 10 years’ solid experience in SQL Server BI stack (SSAS, SSIS, SSRS, DW, Power BI) and currently working in eCommerce Domain. He has worked on major consulting assignments with organization Citi Bank, Barclays, Wachovia Corporation, Inter Public Group, C.B.R.E., Kimberly Clark and XL Insurance.</br>He has designed and developed numerous SQL Server BI applications and served as the principal interface to various business stakeholders.</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="https://www.facebook.com/empiredatasystems/" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-facebook" target="_blank">
+                                <i class="zmdi zmdi-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/EmpireDataSystems" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-youtube" target="_blank">
+                                <i class="zmdi zmdi-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/danielthedba" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-linkedin" target="_blank">
+                                <i class="zmdi zmdi-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <a href="{{ route('about') }}" class="btn btn-raised btn-sm btn-success">
+                                <i class="zmdi zmdi-account"></i>Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-royal wow zoomInUp animation-delay-9" style="visibility: visible; animation-name: zoomInUp;">
+                <div class="withripple zoom-img">
+                    <a href="javascript:void()" class="">
+                        <img src="{{ asset('/assets/img/demo/Honey_Goyal.jpg') }}" alt="Honey Goyal" class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-block">
+                    <span class="badge badge-royal pull-right">Azure Architect</span>
+                    <h3 class="color-royal">Ashish Raj</h3>
+                    <p>Ashish Raj is Microsoft Certified Azure Architect and has overall more than 10 years of experience in IT. He is also a Microsoft Certified Trainer, Infrastructure Engineer and Dev(Sec)Ops expert. He is an active contributor to Dev(Sec)Ops and Azure community, speaks at webinars and local meetups. Ashish has been recognized as Azure Master of the month by Microsoft and his blogs has been featured in Azure community’s news multiple times. He has also been recognized as content hero by Microsoft for his contribution to technical community.</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="https://www.facebook.com/empiredatasystems/" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-facebook" target="_blank">
+                                <i class="zmdi zmdi-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/EmpireDataSystems" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-youtube" target="_blank">
+                                <i class="zmdi zmdi-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/danielthedba" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-linkedin" target="_blank">
+                                <i class="zmdi zmdi-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <a href="{{ route('about') }}" class="btn btn-raised btn-sm btn-royal">
+                                <i class="zmdi zmdi-account"></i>Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container mt-6">
     <div class="text-center mb-4">
-        <h2 class="uppercase color-primary">See our subscription plans</h2>
+        <h2 class="uppercase color-primary">See our Cost-Effective Training Fees</h2>
         <p class="lead uppercase">Surprise with our unique features</p>
     </div>
-    <div class="row g-0">
-        <div class="col-lg-4">
-            <div class="price-table price-table-info wow zoomInUp animation-delay-2">
-                <header class="price-table-header">
-                    <span class="price-table-category">Personal</span>
-                    <h3><sup>$</sup>19.99 <sub>/mo.</sub></h3>
-                </header>
-                <div class="price-table-body">
-                    <ul class="price-table-list">
-                        <li><i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                        <li><i class="zmdi zmdi-globe"></i> Voluptate ex quam autem dolor.</li>
-                        <li><i class="zmdi zmdi-settings"></i> Dignissimos velit reic cumque.</li>
-                        <li><i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                        <li><i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-                    </ul>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-                    </div>
+    <div class="row">
+        <div class="col-md-4 price-table price-table-info wow zoomInUp animation-delay-2">
+            <header class="price-table-header">
+                <span class="price-table-category">SQL Server DBA + Azure SQL + TSQL Programming</span>
+                <h3>
+                    <sup>$</sup>750
+                    <sub>/Student</sub>
+                </h3>
+            </header>
+            <div class="price-table-body">
+                <ul class="price-table-list">
+                    <li>
+                        <i class="zmdi zmdi-star"></i>100 Hours Live Training
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Recorded Videos of Each Class
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Reading Materials
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-globe"></i>Lab Exercises
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-settings"></i>Research Papers
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-cloud"></i>Microsoft Certification Materials
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Interview Questions
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Resume Preparation
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>On the Job Support Assistance
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a href="sql-server-dba-training.html" class="btn btn-info btn-raised">
+                        <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="price-table price-table-success prominent wow zoomInDown animation-delay-2">
-                <header class="price-table-header">
-                    <span class="price-table-category">Professional</span>
-                    <h3><sup>$</sup>49.99 <sub>/mo.</sub></h3>
-                </header>
-                <div class="price-table-body">
-                    <ul class="price-table-list">
-                        <li><i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                        <li><i class="zmdi zmdi-globe"></i> Voluptate ex quam autem dolor.</li>
-                        <li><i class="zmdi zmdi-settings"></i> Dignissimos velit reic cumque.</li>
-                        <li><i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                        <li><i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-                    </ul>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-success btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-                    </div>
+        <div class="col-md-4 price-table price-table-success prominent wow zoomInDown animation-delay-2">
+            <header class="price-table-header">
+                <span class="price-table-category">Microsoft Azure Fabric/Data Engineering + Power BI</span>
+                <h3>
+                    <sup>$</sup>750
+                    <sub>/Student</sub>
+                </h3>
+            </header>
+            <div class="price-table-body">
+                <ul class="price-table-list">
+                    <li>
+                        <i class="zmdi zmdi-star"></i>50 Hours Live Training
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Recorded Videos of Each Class
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Reading Materials
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-globe"></i>Lab Exercises
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-settings"></i>Research Papers
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-cloud"></i>Microsoft Certification Materials
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Interview Questions
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Resume Preparation
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-cloud"></i>On the Job Support Assistance
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a href="sql-server-bi-training.html" class="btn btn-success btn-raised">
+                        <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="price-table price-table-warning wow zoomInUp animation-delay-2">
-                <header class="price-table-header">
-                    <span class="price-table-category">Business</span>
-                    <h3><sup>$</sup>99.99 <sub>/mo.</sub></h3>
-                </header>
-                <div class="price-table-body">
-                    <ul class="price-table-list">
-                        <li><i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                        <li><i class="zmdi zmdi-globe"></i> Voluptate ex quam autem dolor.</li>
-                        <li><i class="zmdi zmdi-settings"></i> Dignissimos velit reic cumque.</li>
-                        <li><i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                        <li><i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-                    </ul>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-warning btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-                    </div>
+        <div class="col-md-4 price-table price-table-warning wow zoomInUp animation-delay-2">
+            <header class="price-table-header">
+                <span class="price-table-category">Azure AI/Azure Administration/AWS</span>
+                <h3>
+                    <sup>$</sup>750
+                    <sub>/Student</sub>
+                </h3>
+            </header>
+            <div class="price-table-body">
+                <ul class="price-table-list">
+                    <li>
+                        <i class="zmdi zmdi-star"></i>40 Hours Live Training
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Recorded Videos of Each Class
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Reading Materials
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-globe"></i>Lab Exercises
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-settings"></i>Research Papers
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-cloud"></i>Microsoft Certification Materials
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Interview Questions
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>Resume Preparation
+                    </li>
+                    <li>
+                        <i class="zmdi zmdi-star"></i>On the Job Support Assistance
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a href="sql-server-performance-tuning-training.html" class="btn btn-warning btn-raised">
+                        <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
                 </div>
             </div>
         </div>
     </div>
-</div> <!--container -->
-<div class="wrap wrap-danger mt-6">
-    <h2 class="text-center no-m">What our customers say</h2>
+</div>
+<div class="wrap mt-6" style="background-color:#0277bd;">
+    <h2 class="text-center no-m text-white">Our Gratified Student Responses</h2>
     <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" data-bs-ride="carousel" data-bs-interval="7000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -341,62 +495,39 @@
                             <div class="col-lg-4">
                                 <div class="card animated flipInX animation-delay-2 mb-4">
                                     <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
+                                        <img src="{{ asset('/assets/img/demo/avatar.png') }}" alt="Empire Data System Feedback Avatar" class="avatar d-none d-sm-block">
+                                        <p>Great SQL Server DBA course from Daniel!!!! Excellent material and presentations. He provided great depth on the topics that were covered and was able to discuss off-topic areas as well. His technical expertise in the area ...</p>
+                                        <footer>Mike Weist</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
                                     </blockquote>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="card animated flipInX animation-delay-3 mb-4">
+                            <div class="col-md-4">
+                                <div class="card animated flipInX animation-delay-3">
                                     <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
+                                        <img src="{{ asset('/assets/img/demo/avatar.png') }}" alt="Empire Data System Feedback Avatar" class="avatar d-none d-sm-block">
+                                        <p>Overall Ajay did a very good job with his instruction in a clear manner. I would recommend this course to anyone want to get in to Azure Cloud technology and grow your career. I will be interested in signing up for future classes...</p>
+                                        <footer>Daniel Malik</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
                                     </blockquote>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="card animated flipInX animation-delay-4 mb-4">
+                            <div class="col-md-4">
+                                <div class="card animated flipInX animation-delay-4">
                                     <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card animated flipInX animation-delay-2 mb-4">
-                                    <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card animated flipInX animation-delay-3 mb-4">
-                                    <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card animated flipInX animation-delay-4 mb-4">
-                                    <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
+                                        <img src="{{ asset('/assets/img/demo/avatar-girl.png') }}" alt="Empire Data System Feedback Avatar" class="avatar d-none d-sm-block">
+                                        <p>Ajay was an excellent instructor. He was patient and supportive. I enjoyed the course and learned a lot. I highly recommend him and this course in EmpireDataSystem to anyone interested in learning Azure admin in and out...</p>
+                                        <footer>Ishrat Mostafi</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
                                     </blockquote>
                                 </div>
                             </div>
@@ -408,30 +539,89 @@
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <div class="card animated flipInX animation-delay-2 mb-4">
                                     <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
+                                        <img src="{{ asset('/assets/img/demo/avatar.png') }}" alt="Empire Data System Feedback Avatar" class="avatar d-none d-sm-block  ">
+                                        <p>Awesome SQL Server Training course from Daniel. Covered all the topics from the basics. This course has given me a good foundation since I am from non-IT background. ...
+                                        <footer>Hiwot Tilaye</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
                                     </blockquote>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="card animated flipInX animation-delay-3 mb-4">
+                            <div class="col-md-4">
+                                <div class="card animated flipInX animation-delay-3">
                                     <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
+                                        <img src="{{ asset('/assets/img/demo/avatar.png') }}" alt="Empire Data System Feedback Avatar" class="avatar hidden-xs">
+                                        <p>I really loved learning/taking the SQL Server DBA/TSQL training course from Daniel. It was a wonderful experience. He's very Thorough, professional, personable and very friendly. ..</p>
+                                        <footer>Hemant Patel</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
                                     </blockquote>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="card animated flipInX animation-delay-4 mb-4">
+                            <div class="col-md-4">
+                                <div class="card animated flipInX animation-delay-4">
                                     <blockquote class="blockquote blockquote-avatar withripple">
-                                        <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO.</footer>
+                                        <img src="{{ asset('/assets/img/demo/avatar.png') }}" alt="Empire Data System Feedback Avatar" class="avatar hidden-xs">
+                                        <p>Deeksha and Ashish are great instructors. They explained the topics clearly and have patient in taking and answering questions. I am planning to take the exam next month...</p>
+                                        <footer>Temesgen</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card animated flipInX animation-delay-2 mb-4">
+                                    <blockquote class="blockquote blockquote-avatar withripple">
+                                        <img src="{{ asset('/assets/img/demo/avatar.png') }}" alt="Empire Data System Feedback Avatar" class="avatar hidden-xs">
+                                        <p>Due to the change on my work schedule I didn't attend some classes But the video records and worksheets which will be emailed for every student after the end of the class is very supportive and make ...</p>
+                                        <footer>Samrawit Chernet</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card animated flipInX animation-delay-3">
+                                    <blockquote class="blockquote blockquote-avatar withripple">
+                                        <img src="{{ asset('/assets/img/demo/avatar.png') }}" alt="Empire Data System Feedback Avatar" class="avatar hidden-xs">
+                                        <p>I heard you were the best trainer for SQL Server Trainer from my friend so I approached you. I completely agree with him and much more. You are the best and your SQL Server knowledge is amazing! ...</p>
+                                        <footer>Praveen Reddy</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card animated flipInX animation-delay-4">
+                                    <blockquote class="blockquote blockquote-avatar withripple">
+                                        <img src="{{ asset('/assets/img/demo/avatar-girl.png') }}" alt="Empire Data System Feedback Avatar" class="avatar hidden-xs">
+                                        <p>Ajaye knows Azure infrastructure very well and communicates in a more simple and articulated way. I really appreciate his patience, respect, and concern for his students as well as being very helpful. Thank you, Ajaye!... </p>
+                                        <footer>Mekdes Abera</footer>
+                                        <div class="col-xs-6 text-center">
+                                            <a href="{{ route('student.feedbacks') }}" class="btn btn-raised btn-sm btn-primary">
+                                                <i class="zmdi zmdi-account"></i>View More..</a>
+                                        </div>
                                     </blockquote>
                                 </div>
                             </div>
@@ -449,119 +639,129 @@
         </a>
     </div>
 </div>
-
 <div class="container mt-6">
-    <h2 class="text-center color-primary mb-4">Our Latest Works</h2>
+    <h2 class="text-center color-primary mb-4">Facts Students Should Know </h2>
     <div class="owl-dots"></div>
     <div class="owl-carousel owl-theme">
-        <div class="card animation-delay-6">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port4.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="color-primary">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
+        <div class="card card-dark-inverse animation-delay-6">
+            <div class="card-block">
+                <h3 class="color-primary">Why we are #1 in USA?</h3>
+                <p>Our founder Daniel AG believes in nothing less than perfect, and personally monitors every single course. Mr.Daniel is available to talk to you any time, </p>
                 <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
+                    <a href="why-we-are-in-usa.html" class="btn btn-primary btn-raised text-right" role="button">
+                        <i class="zmdi zmdi-collection-image-o"></i> View More</a>
                 </p>
             </div>
         </div>
-        <div class="card card-dark-inverse animation-delay-8">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port24.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
+        <div class="card animation-delay-8">
+            <div class="card-block">
+                <h3 class="">How to Find a Good Trainer?</h3>
+                <p>The choice of a good IT trainer could make or break your IT career. If you work with a good trainer, you are bound to take your career from one success to another.</p>
                 <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-info btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
+                    <a href="how-to-find-good-trainer.html" class="btn btn-info btn-raised text-right" role="button">
+                        <i class="zmdi zmdi-collection-image-o"></i> View More</a>
                 </p>
             </div>
         </div>
-        <div class="card animation-delay-10">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port7.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="color-primary">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
+        <div class="card card-dark-inverse animation-delay-10">
+            <div class="card-block">
+                <h3 class="color-primary">Why DBA and Azure Career are the best?</h3>
+                <p>Here are the practical reasons why the DBA/Azure profession is always “THE BEST”. Better pay, High and consistent demand in the job market</p>
                 <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                </p>
-            </div>
-        </div>
-        <div class="card animation-delay-6">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port8.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="color-primary">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                </p>
-            </div>
-        </div>
-        <div class="card card-dark-inverse animation-delay-8">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port9.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-info btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                </p>
-            </div>
-        </div>
-        <div class="card animation-delay-10">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port5.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="color-primary">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                </p>
-            </div>
-        </div>
-        <div class="card animation-delay-6">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port11.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="color-primary">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                </p>
-            </div>
-        </div>
-        <div class="card card-dark-inverse animation-delay-8">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port3.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-info btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                </p>
-            </div>
-        </div>
-        <div class="card animation-delay-10">
-            <div class="withripple zoom-img">
-                <a href="javascript:void()"><img src="assets/img/demo/port14.jpg" alt="..." class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-                <h3 class="color-primary">Thumbnail label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                <p class="text-right">
-                    <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
+                    <a href="why-dba-bi-career.html" class="btn btn-primary btn-raised text-right" role="button">
+                        <i class="zmdi zmdi-collection-image-o"></i> View More</a>
                 </p>
             </div>
         </div>
     </div>
 </div>
+<div class="container mt-4">
+    <div class="row">
+        <h2 class="text-center mb-2 wow fadeInDown color-primary animation-delay-4">Our Live Class Videos</h2>
+        <div class="col-md-4">
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="zmdi zmdi-graduation-cap"></i>SQL Server DBA/TSQL Training</h3>
+                </div>
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=ASeF-bo6xW0"><img src="https://img.youtube.com/vi/ASeF-bo6xW0/hqdefault.jpg" class="img-fluid" /></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-info">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="zmdi zmdi-graduation-cap"></i>SQL Server DBA/TSQL Training</h3>
+                </div>
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=bSp6p9GwTvg"><img src="https://img.youtube.com/vi/bSp6p9GwTvg/hqdefault.jpg" class="img-fluid" /></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-success">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="zmdi zmdi-graduation-cap"></i>SQL Server DBA/TSQL Training</h3>
+                </div>
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=gIuV-qYAdm0"><img src="https://img.youtube.com/vi/gIuV-qYAdm0/hqdefault.jpg" class="img-fluid" /></a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h5 class="text-center mb-2 wow fadeInDown animation-delay-4"><a href="our-live-class-videos.html">Watch More Videos</a></h5>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Student Demographic</h2>
+            <canvas id="myChart1" width="400" height="400"></canvas>
+        </div>
+        <div class="col-md-8">
+            <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Our Technology Proficiency</h2>
+            <div class="progress progress-lg">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>SQL Server Database Administration - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>SQL Server Database Programing - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>SQL Server Business Intelligence(SSIS, SSAS, SSRS, Power BI) - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>SQL Server Performance Tuning - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>Azure Administration - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>Dev(Sec)Ops Engineering - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar progress-bar-royal" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>Microsoft Azure Data Engineering (Data Factory, Synapse Analytics, Databricks, Data Lake, Blob Storage, Azure Cosmos) - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>AWS Architect - 100%</span>
+                </div>
+            </div>
+            <div class="progress progress-lg">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span>Azure AI Engineering - 100%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection

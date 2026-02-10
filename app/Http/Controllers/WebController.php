@@ -15,6 +15,14 @@ class WebController extends Controller
         return view('index', compact('title', 'description', 'keywords'));
     }
 
+    function about()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('about', compact('title', 'description', 'keywords'));
+    }
+
     function student_feedbacks()
     {
         $title = "Empire Data Systems | Student Feedback";
