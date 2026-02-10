@@ -25,13 +25,13 @@
                     <i class="zmdi zmdi-file"></i> FAQs
                 </a>
                 <ul id="sc2" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch2" data-bs-parent="#slidebar-menu">
-                    <li><a href="page-about.html">WHY WE ARE #1 IN USA?</a></li>
-                    <li><a href="page-team.html">WHY ONLINE TRAINING?</a></li>
-                    <li><a href="page-product.html">HOW TO FIND A GOOD TRAINER?</a></li>
-                    <li><a href="page-services.html">WHY DBA AND BI CAREER?</a></li>
-                    <li><a href="page-faq.html">SQL SERVER JOBS</a></li>
-                    <li><a href="page-timeline_left.html">SQL TRAINING DATABASE CONCEPT</a></li>
-                    <li><a href="page-contact.html">DATA WAREHOUSE CONCEPT</a></li>
+                    <li><a href="{{ route('faq.why.we.are') }}">WHY WE ARE #1 IN USA?</a></li>
+                    <li><a href="{{ route('faq.why.online.training') }}">WHY ONLINE TRAINING?</a></li>
+                    <li><a href="{{ route('faq.how.to.find') }}">HOW TO FIND A GOOD TRAINER?</a></li>
+                    <li><a href="{{ route('faq.why.dba.and.bi') }}">WHY DBA AND BI CAREER?</a></li>
+                    <li><a href="{{ route('faq.sql.server.jobs') }}">SQL SERVER JOBS</a></li>
+                    <li><a href="{{ route('faq.sql.training.db.concept') }}">SQL TRAINING DATABASE CONCEPT</a></li>
+                    <li><a href="{{ route('faq.data.wh.concept') }}">DATA WAREHOUSE CONCEPT</a></li>
                 </ul>
             </li>
             <li class="card" role="tab" id="sch3">

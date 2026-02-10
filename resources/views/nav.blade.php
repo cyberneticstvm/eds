@@ -6,16 +6,16 @@
         <li class="nav-item {{ (in_array(Route::currentRouteName(), ['about'])) ? 'active' : '' }}">
             <a href="{{ route('about') }}" class="animated fadeIn animation-delay-7" data-name="about">About Us</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {{ (in_array(Route::currentRouteName(), ['faq.why.we.are', 'faq.why.online.training', 'faq.how.to.find', 'faq.why.dba.and.bi', 'faq.sql.server.jobs', 'faq.sql.training.db.concept', 'faq.data.wh.concept'])) ? 'active' : '' }}">
             <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="page">Faqs <i class="zmdi zmdi-chevron-down"></i></a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">WHY WE ARE #1 IN USA?</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">WHY ONLINE TRAINING?</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">HOW TO FIND A GOOD TRAINER?</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">WHY DBA AND BI CAREER?</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">SQL SERVER JOBS</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">SQL TRAINING DATABASE CONCEPT</a></li>
-                <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">DATA WAREHOUSE CONCEPT</a></li>
+                <li><a class="dropdown-item" href="{{ route('faq.why.we.are') }}" class="dropdown-link">WHY WE ARE #1 IN USA?</a></li>
+                <li><a class="dropdown-item" href="{{ route('faq.why.online.training') }}" class="dropdown-link">WHY ONLINE TRAINING?</a></li>
+                <li><a class="dropdown-item" href="{{ route('faq.how.to.find') }}" class="dropdown-link">HOW TO FIND A GOOD TRAINER?</a></li>
+                <li><a class="dropdown-item" href="{{ route('faq.why.dba.and.bi') }}" class="dropdown-link">WHY DBA AND BI CAREER?</a></li>
+                <li><a class="dropdown-item" href="{{ route('faq.sql.server.jobs') }}" class="dropdown-link">SQL SERVER JOBS</a></li>
+                <li><a class="dropdown-item" href="{{ route('faq.sql.training.db.concept') }}" class="dropdown-link">SQL TRAINING DATABASE CONCEPT</a></li>
+                <li><a class="dropdown-item" href="{{ route('faq.data.wh.concept') }}" class="dropdown-link">DATA WAREHOUSE CONCEPT</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">

@@ -23,6 +23,62 @@ class WebController extends Controller
         return view('about', compact('title', 'description', 'keywords'));
     }
 
+    function why_we_are()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('faqs.why_we_are', compact('title', 'description', 'keywords'));
+    }
+
+    function why_online_training()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('faqs.why_online_training', compact('title', 'description', 'keywords'));
+    }
+
+    function how_to_find()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('faqs.how_to_find', compact('title', 'description', 'keywords'));
+    }
+
+    function why_dba_and_bi()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('faqs.why_dba_and_bi', compact('title', 'description', 'keywords'));
+    }
+
+    function sql_server_jobs()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('faqs.sql_server_jobs', compact('title', 'description', 'keywords'));
+    }
+
+    function sql_training_db_concept()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('faqs.sql_training_db_concept', compact('title', 'description', 'keywords'));
+    }
+
+    function data_wh_concept()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('faqs.data_wh_concept', compact('title', 'description', 'keywords'));
+    }
+
     function student_feedbacks()
     {
         $title = "Empire Data Systems | Student Feedback";
