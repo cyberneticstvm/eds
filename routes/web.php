@@ -15,7 +15,7 @@ Route::middleware(['web'])->group(function () {
         Route::get('how-to-find-a-good-trainer', 'how_to_find')->name('faq.how.to.find');
         Route::get('why-dba-and-bi-career', 'why_dba_and_bi')->name('faq.why.dba.and.bi');
         Route::get('sql-server-jobs', 'sql_server_jobs')->name('faq.sql.server.jobs');
-        Route::get('sql-tarining-database-concept', 'sql_training_db_concept')->name('faq.sql.training.db.concept');
+        Route::get('sql-server-training-database-concept', 'sql_training_db_concept')->name('faq.sql.training.db.concept');
         Route::get('data-warehouse-concept', 'data_wh_concept')->name('faq.data.wh.concept');
     });
 });
