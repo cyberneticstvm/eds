@@ -11,12 +11,12 @@
 
         <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
             <li class="card" role="tab">
-                <a role="button">
+                <a role="button" href="{{ route('index') }}">
                     <i class="zmdi zmdi-home"></i> Home
                 </a>
             </li>
             <li class="card" role="tab">
-                <a role="button">
+                <a role="button" href="{{ route('about') }}">
                     <i class="zmdi zmdi-account"></i> About Us
                 </a>
             </li>

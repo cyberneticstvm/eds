@@ -1,10 +1,10 @@
 <div class="collapse navbar-collapse" id="ms-navbar">
     <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a href="#" class="animated fadeIn animation-delay-7" data-name="home">Home</a>
+        <li class="nav-item {{ (in_array(Route::currentRouteName(), ['index'])) ? 'active' : '' }}">
+            <a href="{{ route('index') }}" class="animated fadeIn animation-delay-7" data-name="home">Home</a>
         </li>
-        <li class="nav-item">
-            <a href="#" class="animated fadeIn animation-delay-7" data-name="about">About Us</a>
+        <li class="nav-item {{ (in_array(Route::currentRouteName(), ['about'])) ? 'active' : '' }}">
+            <a href="{{ route('about') }}" class="animated fadeIn animation-delay-7" data-name="about">About Us</a>
         </li>
         <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-bs-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="page">Faqs <i class="zmdi zmdi-chevron-down"></i></a>
