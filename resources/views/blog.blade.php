@@ -63,16 +63,17 @@
                                 <div class="card-block-big color-dark">
                                     <h2 class="color-primary text-center">Subscribe</h2>
                                     <p class="lead text-center">Please subscribe our technical blog to get recent updates.</p>
-                                    <form name="frm-subscription1" id="frm-subscription1" class="m-5">
-                                        <div class="form-group label-floating">
-                                            <label class="control-label" for="addon2">Enter your email</label>
-                                            <input type="email" name="txt-subscribe" id="txt-subscribe" class="form-control" required>
-                                        </div>
-                                        <div class="text-center">
-                                            <button type="submit" class="btn btn-primary btn-raised">
-                                                <i class="zmdi zmdi-email"></i> Subscribe</button>
-                                        </div>
-                                    </form>
+                                    {{ html()->form('POST')->route('submit.form')->open() }}
+                                    <input type="hidden" name="submit_type" value="17" />
+                                    <div class="form-group label-floating m-5">
+                                        <label class="control-label" for="addon2">Enter your email</label>
+                                        <input type="email" name="contact_email" id="txt-subscribe" class="form-control" required>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-raised">
+                                            <i class="zmdi zmdi-email"></i> Subscribe</button>
+                                    </div>
+                                    {{ html()->form()->close() }}
                                     <div class="msg-sub"></div>
                                 </div>
                             </div>

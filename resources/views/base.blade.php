@@ -175,16 +175,17 @@
                         <div class="ms-footbar-block">
                             <h3 class="ms-footbar-title">Subscribe</h3>
                             <p class="">Your career is your responsibility. Please subscribe and stay in touch. Call me directly @ <a href="tel: +1267 718 1533" class='color-warning'>267 718 1533</a> with any of your questions - Daniel AG</p>
-                            <form name="frm-subscription" id="frm-subscription">
-                                <div class="form-group label-floating mt-2 mb-1">
-                                    <div class="input-group ms-input-subscribe">
-                                        <label class="control-label" for="ms-subscribe">
-                                            <i class="zmdi zmdi-email"></i> Email Adress</label>
-                                        <input type="email" name="txt-subscribe" id="txt-subscribe" class="form-control" required>
-                                    </div>
+                            {{ html()->form('POST')->route('submit.form')->open() }}
+                            <input type="hidden" name="submit_type" value="17" />
+                            <div class="form-group label-floating mt-2 mb-1">
+                                <div class="input-group ms-input-subscribe">
+                                    <label class="control-label" for="ms-subscribe">
+                                        <i class="zmdi zmdi-email"></i> Email Adress</label>
+                                    <input type="email" name="contact_email" id="contact_email" class="form-control" required>
                                 </div>
-                                <button class="ms-subscribre-btn" type="submit" name="btn-subscribe" id="btn-subscribe">Subscribe</button>
-                            </form>
+                            </div>
+                            <button class="ms-subscribre-btn" type="submit" name="btn-subscribe" id="btn-subscribe">Subscribe</button>
+                            {{ html()->form()->close() }}
                             <div class="msg-sub"></div>
                         </div>
                     </div>
@@ -193,37 +194,38 @@
                             <h3 class="ms-footbar-title text-center mb-2">Contact Daniel</h3>
                             <div class="ms-footer-media">
                                 <div class="card-block">
-                                    <form name="frm-contact" id="frm-contact" class="form-horizontal">
-                                        <fieldset class="text-left">
-                                            <div class="form-group is-empty">
-                                                <div class="col-md-12">
-                                                    <input type="text" class="form-control" name="txt-name" id="txt-name" placeholder="Name" required>
-                                                </div>
+                                    {{ html()->form('POST')->route('submit.form')->open() }}
+                                    <input type="hidden" name="submit_type" value="10" />
+                                    <fieldset class="text-left">
+                                        <div class="form-group is-empty">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" name="contact_name" id="txt-name" placeholder="Name" required>
                                             </div>
-                                            <div class="form-group is-empty">
-                                                <div class="col-md-12">
-                                                    <input type="email" class="form-control" name="txt-email" id="txt-email" placeholder="Email" required>
-                                                </div>
+                                        </div>
+                                        <div class="form-group is-empty">
+                                            <div class="col-md-12">
+                                                <input type="email" class="form-control" name="contact_email" id="txt-email" placeholder="Email" required>
                                             </div>
-                                            <div class="form-group is-empty">
-                                                <div class="col-md-12">
-                                                    <input type="text" class="form-control" name="txt-phone" id="txt-phone" placeholder="Phone" required>
-                                                </div>
+                                        </div>
+                                        <div class="form-group is-empty">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" name="contact_phone" id="txt-phone" placeholder="Phone" required>
                                             </div>
-                                            <div class="form-group is-empty">
-                                                <div class="col-md-12">
-                                                    <textarea class="form-control" rows="5" name="txt-msg" id="txt-msg" placeholder="Your message..." required></textarea>
-                                                </div>
+                                        </div>
+                                        <div class="form-group is-empty">
+                                            <div class="col-md-12">
+                                                <textarea class="form-control" rows="5" name="message" id="txt-msg" placeholder="Your message..." required></textarea>
                                             </div>
-                                            <div class="form-group">
-                                                <div class="col-md-12 col-md-offset-3 text-center">
-                                                    <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary">Submit</button>
-                                                    <button type="button" name="btn-cancel" id="btn-cancel" class="btn btn-raised btn-danger">Cancel</button>
-                                                </div>
-                                                <div class='msg-contact'></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12 col-md-offset-3 text-center">
+                                                <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary">Submit</button>
+                                                <button type="button" name="btn-cancel" id="btn-cancel" class="btn btn-raised btn-danger">Cancel</button>
                                             </div>
-                                        </fieldset>
-                                    </form>
+                                            <div class='msg-contact'></div>
+                                        </div>
+                                    </fieldset>
+                                    {{ html()->form()->close() }}
                                 </div>
                             </div>
                         </div>

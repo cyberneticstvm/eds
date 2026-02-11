@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Country;
 use App\Models\Course;
+use App\Models\FormSubmit;
 use App\Models\StudentFeedback;
 use Illuminate\Http\Request;
 
@@ -243,6 +244,35 @@ class WebController extends Controller
         $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
         return view('message', compact('title', 'description', 'keywords'));
+    }
+
+    function submit_form(Request $request)
+    {
+        if ($request->submit_type == 17):
+            $inputs = $request->validate([
+                'contact_email' => 'required|email',
+                'submit_type' => 'required',
+            ]);
+        endif;
+        if ($request->submit_type == 10):
+            $inputs = $request->validate([
+                'contact_name' => 'required',
+                'contact_email' => 'required|email',
+                'contact_phone' => 'required',
+                'submit_type' => 'required',
+            ]);
+        endif;
+        if ($request->submit_type == 11):
+            $inputs = $request->validate([
+                'contact_name' => 'required',
+                'contact_email' => 'required|email',
+                'contact_phone' => 'required',
+                'message' => 'required',
+                'submit_type' => 'required',
+            ]);
+        endif;
+        FormSubmit::create($inputs);
+        return redirect()->route('message');
     }
 
     function sitemap()

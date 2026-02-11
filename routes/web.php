@@ -43,4 +43,7 @@ Route::middleware(['web'])->group(function () {
         Route::get('student-details', 'student_details')->name('student.details');
         Route::get('referral', 'referral')->name('referral');
     });
+    Route::prefix('form')->controller(WebController::class)->group(function () {
+        Route::post('submit', 'submit_form')->name('submit.form');
+    });
 });

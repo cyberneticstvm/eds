@@ -125,25 +125,28 @@
                             <h3 class="text-center no-m pt-4 color-primary index-1">Talk to Daniel</h3>
                         </div>
                         <div class="card-block">
-                            <form class="form-inline" name="frm-talk" id="frm-talk">
-                                <input type="hidden" name="txt_course" value="SQL Server DBA Training">
-                                <input type="hidden" name="txt_trainer" value="Daniel">
-                                <div class="form-group">
+                            {{ html()->form('POST')->route('submit.form')->open() }}
+                            <input type="hidden" name="submit_type" value="11" />
+                            <input type="hidden" name="txt_course" value="SQL Server DBA Training">
+                            <input type="hidden" name="txt_trainer" value="Daniel">
+                            <div class="row">
+                                <div class="form-group col-lg-3">
                                     <label for="exampleInputName2" class="bmd-label-floating">Name*</label>
-                                    <input type="text" name="txt_name" class="form-control" required>
+                                    <input type="text" name="contact_name" class="form-control" required>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-lg-3">
                                     <label for="exampleInputEmail2" class="bmd-label-floating">Email*</label>
-                                    <input type="email" name="txt_email" class="form-control" id="exampleInputEmail2" required>
+                                    <input type="email" name="contact_email" class="form-control" id="exampleInputEmail2" required>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-lg-3">
                                     <label for="exampleInputEmail2" class="bmd-label-floating">Mobile Number*</label>
-                                    <input type="text" name="txt_phone" class="form-control" id="exampleInputEmail2" required>
+                                    <input type="text" name="contact_phone" class="form-control" id="exampleInputEmail2" required>
                                 </div>
-                                <span class="form-group bmd-form-group">
+                                <span class="form-group bmd-form-group col-lg-3">
                                     <button type="submit" class="btn btn-raised btn-primary">SUBMIT</button>
                                 </span>
-                            </form><br>
+                            </div>
+                            {{ html()->form()->close() }}
                             <span class="msg-contact color-info"></span>
                         </div>
                     </div>
