@@ -12,50 +12,50 @@
 <div class="container">
     <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
         <div class="card-body">
-            <form class="form-horizontal">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="myModalLabel6">Submit Your Referral</h3>
+            {{ html()->form('POST')->route('submit.referral.form')->class("form-horizontal")->open() }}
+            <div class="modal-header">
+                <h3 class="modal-title" id="myModalLabel6">Submit Your Referral</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="color-primary">Your Information</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="student_name" id="txt-student" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" name="student_email" id="txt-email-id" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="student_phone" id="txt-addr1" placeholder="Phone Number" required>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="color-primary">Your Information</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-student" id="txt-student" placeholder="Name" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="email" class="form-control" name="txt-email-id" id="txt-email-id" placeholder="Email" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-addr1" id="txt-addr1" placeholder="Phone Number" required>
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="color-primary">Student You Are Referring</h5>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="color-primary">Student You Are Referring</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-student" id="txt-student" placeholder="Name" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="email" class="form-control" name="txt-email-id" id="txt-email-id" placeholder="Email" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-addr1" id="txt-addr1" placeholder="Phone Number" required>
-                        </div>
-                        <div class="col-md-4">
-                            {{ html()->select("course", $courses->pluck("name", "id"), NULL)->class("form-control")->placeholder("Select Course") }}
-                        </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="ref_name" id="txt-student" placeholder="Name" required>
                     </div>
-                    <div class="row">
-                        <div class="col text-end">
-                            <button type="submit" id="btn-submit" class="btn btn-info">Submit Details</button>
-                        </div>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" name="ref_email" id="txt-email-id" placeholder="Email" required>
                     </div>
-                    <div class="msg-cert"></div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="ref_phone" id="txt-addr1" placeholder="Phone Number" required>
+                    </div>
+                    <div class="col-md-4">
+                        {{ html()->select("course_id", $courses->pluck("name", "id"), NULL)->class("form-control")->placeholder("Select Course")->required() }}
+                    </div>
                 </div>
-            </form>
+                <div class="row">
+                    <div class="col text-end">
+                        <button type="submit" id="btn-submit" class="btn btn-info">Submit Details</button>
+                    </div>
+                </div>
+                <div class="msg-cert"></div>
+            </div>
+            {{ html()->form()->close() }}
         </div>
     </div>
 </div>

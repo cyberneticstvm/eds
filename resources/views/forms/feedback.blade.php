@@ -15,57 +15,58 @@
 <div class="container">
     <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
         <div class="card-body">
-            <form class="form-horizontal">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="myModalLabel6">Submit Your Feedback and Mailing Address</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-student" id="txt-student" placeholder="Student Name" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-trainer" id="txt-trainer" placeholder="Trainer Name" required>
-                        </div>
-                        <div class="col-md-4">
-                            {{ html()->select("course", $courses->pluck("name", "id"), NULL)->class("form-control")->placeholder("Select Course") }}
-                        </div>
-                        <div class="col-md-6">
-                            <textarea class="form-control" rows="5" name="txt-feedback" id="txt-feedback" placeholder="Feedback" required></textarea>
-                        </div>
+            {{ html()->form('POST')->route('submit.feedback.form')->class("form-horizontal")->open() }}
+            <input type="hidden" name="stype" value="2">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myModalLabel6">Submit Your Feedback and Mailing Address</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="student_name" id="txt-student" placeholder="Student Name" required>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input type="email" class="form-control" name="txt-email-id" id="txt-email-id" placeholder="Email" required>
-                        </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="trainer_name" id="txt-trainer" placeholder="Trainer Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        {{ html()->select("course_id", $courses->pluck("name", "id"), NULL)->class("form-control")->placeholder("Select Course")->required() }}
+                    </div>
+                    <div class="col-md-6">
+                        <textarea class="form-control" rows="5" name="feedback" id="txt-feedback" placeholder="Feedback" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" name="student_email" id="txt-email-id" placeholder="Email" required>
+                    </div>
 
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-addr1" id="txt-addr1" placeholder="Address1" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-addr2" id="txt-addr2" placeholder="Address2">
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-city" id="txt-city" placeholder="City" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-state" id="txt-state" placeholder="State" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" name="txt-zip" id="txt-zip" placeholder="Zip Code" required>
-                        </div>
-                        <div class="col-md-4">
-                            {{ html()->select("country", $countries->pluck("name", "id"), NULL)->class("form-control")->placeholder("Select Country") }}
-                        </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="address_1" id="txt-addr1" placeholder="Address1" required>
                     </div>
-                    <div class="row">
-                        <div class="col text-end">
-                            <button type="submit" id="btn-submit" class="btn btn-info">Submit Details</button>
-                        </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="address_2" id="txt-addr2" placeholder="Address2" required>
                     </div>
-                    <div class="msg-cert"></div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="city" id="txt-city" placeholder="City" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="state" id="txt-state" placeholder="State" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="zip_code" id="txt-zip" placeholder="Zip Code" required>
+                    </div>
+                    <div class="col-md-4">
+                        {{ html()->select("country", $countries->pluck("name", "id"), NULL)->class("form-control")->placeholder("Select Country") }}
+                    </div>
                 </div>
-            </form>
+                <div class="row">
+                    <div class="col text-end">
+                        <button type="submit" id="btn-submit" class="btn btn-info">Submit Details</button>
+                    </div>
+                </div>
+                <div class="msg-cert"></div>
+            </div>
+            {{ html()->form()->close() }}
         </div>
     </div>
 </div>

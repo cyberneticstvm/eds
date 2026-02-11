@@ -6,7 +6,7 @@
             <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Our Students <span class="color-warning">Feedback</span>
             </h1>
             <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">"See what students wanna say about <span class="color-warning">our training...</span>"</p>
-            <button type="button" class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal5"> Submit a new Feedback<div class="ripple-container"></div></button>
+            <button type="button" class="btn btn-info btn-raised" data-bs-toggle="modal" data-bs-target="#myModal5"> Submit a new Feedback<div class="ripple-container"></div></button>
         </div>
     </div>
 </div>
@@ -44,6 +44,47 @@
                     </div>
                 </ul>
             </nav>
+        </div>
+    </div>
+</div>
+<div class="modal modal-info" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myModalLabel6">Submit your Feedback</h3>
+            </div>
+            {{ html()->form('POST')->route('submit.feedback.form')->open() }}
+            <input type="hidden" name="stype" value="1">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="student_name" id="txt-student" placeholder="Student Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="trainer_name" id="txt-trainer" placeholder="Trainer Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            {{ html()->select("course_id", $courses->pluck("name", "id"), NULL)->class("form-control")->placeholder("Select Course")->required() }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <textarea class="form-control" rows="3" name="feedback" id="txt-feedback" placeholder="Feedback" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg-feed"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn  btn-info">Submit Feedback</button>
+            </div>
+            {{ html()->form()->close() }}
         </div>
     </div>
 </div>

@@ -45,5 +45,7 @@ Route::middleware(['web'])->group(function () {
     });
     Route::prefix('form')->controller(WebController::class)->group(function () {
         Route::post('submit', 'submit_form')->name('submit.form');
+        Route::post('submit-feedback', 'submit_feedback_form')->name('submit.feedback.form');
+        Route::post('submit-referral', 'submit_referral_form')->name('submit.referral.form');
     });
 });

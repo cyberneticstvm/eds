@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\CertificateRequest;
 use App\Models\Country;
 use App\Models\Course;
 use App\Models\FormSubmit;
+use App\Models\Referral;
 use App\Models\StudentFeedback;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Stevebauman\Location\Facades\Location;
 
 class WebController extends Controller
 {
@@ -156,7 +160,8 @@ class WebController extends Controller
         $description = "SQL Server Training - Hosted By Daniel AG, 16 Years Experienced Data Architect - 90 Hours - $750 per Student";
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, SQL Server BI Training, SQL Server Performance Tuning Training, Hadoop Training, Bigdata Training, SSAS Training, SSRS Training, SSIS Training";
         $feedbacks = StudentFeedback::where("status", 12)->latest()->paginate(25);
-        return view('feedbacks', compact('title', 'description', 'keywords', 'feedbacks'));
+        $courses = $this->courses;
+        return view('feedbacks', compact('title', 'description', 'keywords', 'feedbacks', 'courses'));
     }
 
     function blogs()
@@ -272,6 +277,56 @@ class WebController extends Controller
             ]);
         endif;
         FormSubmit::create($inputs);
+        return redirect()->route('message');
+    }
+
+    function submit_feedback_form(Request $request)
+    {
+        $inputs = $request->validate([
+            'student_name' => 'required',
+        ]);
+        if ($request->stype == 1 || $request->stype == 2):
+            $location = Location::get($request->ip);
+            $inputs["trainer_name"] = $request->trainer_name;
+            $inputs["course_id"] = $request->course_id;
+            $inputs["feedback"] = $request->feedback;
+            $inputs["rating"] = 5;
+            $inputs["feedback_date"] = Carbon::now();
+            $inputs["status"] = 13; // Pending
+            $inputs["ip_address"] = $location->ip;
+            $inputs["location"] = $location->cityName;
+            $inputs["country"] = $location->countryName;
+            StudentFeedback::create($inputs);
+        endif;
+        if ($request->stype == 2 || $request->stype == 3):
+            CertificateRequest::create([
+                "student_name" => $request->student_name,
+                "student_email" => $request->student_email,
+                "course_id" => $request->course_id,
+                "address_1" => $request->address_1,
+                "address_2" => $request->address_2,
+                "city" => $request->city,
+                "state" => $request->state,
+                "zip_code" => $request->zip_code,
+                "country" => $request->country,
+                "status" => 16,
+            ]);
+        endif;
+        return redirect()->route('message');
+    }
+
+    function submit_referral_form(Request $request)
+    {
+        $inputs = $request->validate([
+            'student_name' => 'required',
+            'student_email' => 'required|email',
+            'student_phone' => 'required',
+            'ref_name' => 'required',
+            'ref_email' => 'required|email',
+            'ref_phone' => 'required',
+            'course_id' => 'required',
+        ]);
+        Referral::create($inputs);
         return redirect()->route('message');
     }
 
