@@ -45,37 +45,38 @@
                             <h2 class="text-center no-m pt-4 pb-4 color-white index-1">Contact Us</h2>
                         </div>
                         <div class="card-block">
-                            <form class="form-horizontal" name="frm-contact1" id="frm-contact1">
-                                <fieldset>
-                                    <div class="form-group is-empty">
-                                        <div class="col-md-12">
-                                            <input type="text" class="form-control" id="inputName" name="txt-name" id="txt-name" placeholder="Name" required>
-                                        </div>
+                            {{ html()->form('POST')->route('submit.form')->class("form-horizontal")->open() }}
+                            <input type="hidden" name="submit_type" value="10" />
+                            <fieldset>
+                                <div class="form-group is-empty">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" id="inputName" name="contact_name" id="txt-name" placeholder="Name" required>
                                     </div>
-                                    <div class="form-group is-empty">
-                                        <div class="col-md-12">
-                                            <input type="email" class="form-control" name="txt-email" id="txt-email" id="inputEmail" placeholder="Email" required>
-                                        </div>
+                                </div>
+                                <div class="form-group is-empty">
+                                    <div class="col-md-12">
+                                        <input type="email" class="form-control" name="contact_email" id="txt-email" id="inputEmail" placeholder="Email" required>
                                     </div>
-                                    <div class="form-group is-empty">
-                                        <div class="col-md-12">
-                                            <input type="text" class="form-control" name="txt-phone" id="txt-phone" id="inputSubject" placeholder="Phone" required>
-                                        </div>
+                                </div>
+                                <div class="form-group is-empty">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" name="contact_phone" id="txt-phone" id="inputSubject" placeholder="Phone" required>
                                     </div>
-                                    <div class="form-group is-empty">
-                                        <div class="col-md-12">
-                                            <textarea class="form-control" rows="3" name="txt-msg" id="txt-msg" id="textArea" placeholder="Your message..." required></textarea>
-                                        </div>
+                                </div>
+                                <div class="form-group is-empty">
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" rows="3" name="message" id="txt-msg" id="textArea" placeholder="Your message..." required></textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="col-md-12 col-md-offset-4 text-center">
-                                            <button type="submit" class="btn btn-raised btn-primary">Submit</button>
-                                            <button type="button" class="btn btn-danger">Cancel</button>
-                                        </div>
-                                        <div class='msg-contact'></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 col-md-offset-4 text-center">
+                                        <button type="submit" class="btn btn-raised btn-primary">Submit</button>
+                                        <button type="button" class="btn btn-danger">Cancel</button>
                                     </div>
-                                </fieldset>
-                            </form>
+                                    <div class='msg-contact'></div>
+                                </div>
+                            </fieldset>
+                            {{ html()->form()->close() }}
                         </div>
                     </div>
                 </div>
