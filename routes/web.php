@@ -7,7 +7,14 @@ Route::middleware(['web'])->group(function () {
     Route::prefix('')->controller(WebController::class)->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('about', 'about')->name('about');
+        Route::get('our-live-class-videos', 'videos')->name('videos');
         Route::get('student-feedbacks', 'student_feedbacks')->name('student.feedbacks');
+        Route::get('sql-server-training-blogs', 'blogs')->name('blogs');
+        Route::get('blogs/{id}/{title}', 'blog_details')->name('blog.details');
+        Route::get('contact', 'contact')->name('contact');
+        Route::get('message', 'message')->name('message');
+        Route::get('sitemap.xml', 'sitemap')->name('sitemap');
+        Route::get('robots.txt', 'robots')->name('robots');
     });
     Route::prefix('faqs')->controller(WebController::class)->group(function () {
         Route::get('why-we-are-number-one-in-usa', 'why_we_are')->name('faq.why.we.are');
@@ -25,5 +32,15 @@ Route::middleware(['web'])->group(function () {
         Route::get('microsoft-azure-fabric-training', 'azure_fabric')->name('course.azure.fabric');
         Route::get('microsoft-azure-ai-solution-training', 'azure_ai')->name('course.azure.ai');
         Route::get('aws-solutions-architect-associate-training', 'aws_solution')->name('course.aws.solution');
+    });
+    Route::prefix('policies')->controller(WebController::class)->group(function () {
+        Route::get('refund-policy', 'refund_policy')->name('refund.policy');
+        Route::get('privacy-policy', 'privacy_policy')->name('privacy.policy');
+        Route::get('terms-of-service', 'terms_of_service')->name('terms.of.service');
+    });
+    Route::prefix('forms')->controller(WebController::class)->group(function () {
+        Route::get('student-feedback', 'student_feedback')->name('feedback');
+        Route::get('student-details', 'student_details')->name('student.details');
+        Route::get('referral', 'referral')->name('referral');
     });
 });

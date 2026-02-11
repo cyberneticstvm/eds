@@ -29,17 +29,17 @@
                 <li><a class="dropdown-item" href="{{ route('course.aws.solution') }}" class="dropdown-link">AWS SOLUTIONS ARCHITECT ASSOCIATE</a></li>
             </ul>
         </li>
-        <li class="nav-item">
-            <a href="#" class="animated fadeIn animation-delay-7" data-name="video">Videos</a>
+        <li class="nav-item {{ (in_array(Route::currentRouteName(), ['videos'])) ? 'active' : '' }}">
+            <a href="{{ route('videos') }}" class="animated fadeIn animation-delay-7" data-name="video">Videos</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ (in_array(Route::currentRouteName(), ['student.feedbacks'])) ? 'active' : '' }}">
             <a href="{{ route('student.feedbacks') }}" class="animated fadeIn animation-delay-7" data-name="feedback">Student Feedback</a>
         </li>
-        <li class="nav-item">
-            <a href="#" class="animated fadeIn animation-delay-7" data-name="blog">Blogs</a>
+        <li class="nav-item {{ (in_array(Route::currentRouteName(), ['blogs'])) ? 'active' : '' }}">
+            <a href="{{ route('blogs') }}" class="animated fadeIn animation-delay-7" data-name="blog">Blogs</a>
         </li>
-        <li class="nav-item">
-            <a href="#" class="animated fadeIn animation-delay-7" data-name="contact">Contact Us</a>
+        <li class="nav-item {{ (in_array(Route::currentRouteName(), ['contact'])) ? 'active' : '' }}">
+            <a href="{{ route('contact') }}" class="animated fadeIn animation-delay-7" data-name="contact">Contact Us</a>
         </li>
     </ul>
 </div>

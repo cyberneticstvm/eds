@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col mt-2 text-center">
                     <span class="form-group bmd-form-group">
-                        <a href="/public/storage/pdfs/SQLServer-DBA+Programming.pdf" class="btn btn-lg btn-raised btn-primary" target="_blank">DOWNLOAD COURSE CONTENT</a>
+                        <a href="/storage/pdfs/SQLServer-DBA+Programming.pdf" class="btn btn-lg btn-raised btn-primary" target="_blank">DOWNLOAD COURSE CONTENT</a>
                     </span>
                 </div>
             </div>
@@ -1152,7 +1152,7 @@
             <div class="row">
                 <div class="col mt-2 text-center">
                     <span class="form-group bmd-form-group">
-                        <a href="/public/storage/pdfs/SQLServer-DBA+Programming.pdf" class="btn btn-lg btn-raised btn-primary" target="_blank">DOWNLOAD COURSE CONTENT</a>
+                        <a href="/storage/pdfs/SQLServer-DBA+Programming.pdf" class="btn btn-lg btn-raised btn-primary" target="_blank">DOWNLOAD COURSE CONTENT</a>
                     </span>
                 </div>
             </div>

@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Country;
+use App\Models\Course;
 use App\Models\StudentFeedback;
 use Illuminate\Http\Request;
 
@@ -133,6 +136,14 @@ class WebController extends Controller
         return view('courses.aws_solution', compact('title', 'description', 'keywords', 'feedbacks'));
     }
 
+    function videos()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('videos', compact('title', 'description', 'keywords'));
+    }
+
     function student_feedbacks()
     {
         $title = "Empire Data Systems | Student Feedback";
@@ -140,5 +151,102 @@ class WebController extends Controller
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, SQL Server BI Training, SQL Server Performance Tuning Training, Hadoop Training, Bigdata Training, SSAS Training, SSRS Training, SSIS Training";
         $feedbacks = StudentFeedback::where("status", 12)->latest()->paginate(25);
         return view('feedbacks', compact('title', 'description', 'keywords', 'feedbacks'));
+    }
+
+    function blogs()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        $blogs = Blog::latest()->paginate(15);
+        return view('blogs', compact('title', 'description', 'keywords', 'blogs'));
+    }
+
+    function blog_details(int $id, string $title)
+    {
+        $blog = Blog::findOrFail($id);
+        $title = $blog->title;
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('blog', compact('title', 'description', 'keywords', 'blog'));
+    }
+
+    function contact()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('contact', compact('title', 'description', 'keywords'));
+    }
+
+    function refund_policy()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('policy.refund', compact('title', 'description', 'keywords'));
+    }
+
+    function privacy_policy()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('policy.privacy', compact('title', 'description', 'keywords'));
+    }
+
+    function terms_of_service()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('policy.terms', compact('title', 'description', 'keywords'));
+    }
+
+    function student_feedback()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        $courses = Course::where("status", 1)->get();
+        $countries = Country::all();
+        return view('forms.feedback', compact('title', 'description', 'keywords', 'courses', 'countries'));
+    }
+
+    function student_details()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        $courses = Course::where("status", 1)->get();
+        $countries = Country::all();
+        return view('forms.student', compact('title', 'description', 'keywords', 'courses', 'countries'));
+    }
+
+    function referral()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        $courses = Course::where("status", 1)->get();
+        return view('forms.referral', compact('title', 'description', 'keywords', 'courses'));
+    }
+
+    function message()
+    {
+        $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
+        $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
+        $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
+        return view('message', compact('title', 'description', 'keywords'));
+    }
+
+    function sitemap()
+    {
+        return response()->view('sitemap')->header('Content-Type', 'text/xml');
+    }
+
+    function robots()
+    {
+        return response()->view('robots')->header('Content-Type', 'text/plain');
     }
 }

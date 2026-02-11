@@ -48,22 +48,22 @@
                 </ul>
             </li>
             <li class="card" role="tab">
-                <a role="button">
+                <a role="button" href="{{ route('videos') }}">
                     <i class="zmdi zmdi-play"></i> Videos
                 </a>
             </li>
             <li class="card" role="tab">
-                <a role="button">
+                <a role="button" href="{{ route('student.feedbacks') }}">
                     <i class="zmdi zmdi-copy"></i> Student Feedback
                 </a>
             </li>
             <li class="card" role="tab">
-                <a role="button">
+                <a role="button" href="{{ route('blogs') }}">
                     <i class="zmdi zmdi-border-color"></i> Blogs
                 </a>
             </li>
             <li class="card" role="tab">
-                <a role="button">
+                <a role="button" href="{{ route('contact') }}">
                     <i class="zmdi zmdi-phone-msg"></i> Contact Us
                 </a>
             </li>

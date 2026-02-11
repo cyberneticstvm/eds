@@ -139,35 +139,35 @@
                             <h3 class="ms-footbar-title">Sitemap</h3>
                             <ul class="list-unstyled ms-icon-list three_cols">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="{{ route('index') }}">
                                         <i class="zmdi zmdi-home"></i> Home</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html">
+                                    <a href="{{ route('about') }}">
                                         <i class="zmdi zmdi-edit"></i>About Us</a>
                                 </li>
                                 <li>
-                                    <a href="why-we-are-in-usa.html">
+                                    <a href="{{ route('faq.why.we.are') }}">
                                         <i class="zmdi zmdi-image-o"></i>FAQs</a>
                                 </li>
                                 <li>
-                                    <a href="sql-server-dba-training.html">
+                                    <a href="{{ route('course.sql.dba') }}">
                                         <i class="zmdi zmdi-case"></i>Courses</a>
                                 </li>
                                 <li>
-                                    <a href="our-live-class-videos.html">
+                                    <a href="{{ route('videos') }}">
                                         <i class="zmdi zmdi-time"></i>Videos</a>
                                 </li>
                                 <li>
-                                    <a href="students-feedback.html">
+                                    <a href="{{ route('student.feedbacks') }}">
                                         <i class="zmdi zmdi-money"></i>Feedback</a>
                                 </li>
                                 <li>
-                                    <a href="sql-server-training-blogs.html">
+                                    <a href="{{ route('blogs') }}">
                                         <i class="zmdi zmdi-favorite-outline"></i>Blog</a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">
+                                    <a href="{{ route('contact') }}">
                                         <i class="zmdi zmdi-accounts"></i>Contact Us</a>
                                 </li>
                             </ul>
@@ -271,7 +271,7 @@
         </aside>
         <footer class="ms-footer">
             <div class="container">
-                <div class="policy"><a href="refund-policy.html" class="text-white">Refund Policy</a> | <a href="privacy-policy.html" class="text-white">Privacy Policy</a> | <a href="terms-and-conditions.html" class="text-white">Terms of Service</a></div>
+                <div class="policy"><a href="{{ route('refund.policy') }}" class="text-white">Refund Policy</a> | <a href="{{ route('privacy.policy') }}" class="text-white">Privacy Policy</a> | <a href="{{ route('terms.of.service') }}" class="text-white">Terms of Service</a></div>
                 <p>Copyright &copy; Empire Data Systems 2000-{{ date('Y') }}. All rights reserved.</p>
             </div>
         </footer>
