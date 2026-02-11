@@ -10,6 +10,11 @@ use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
+    private $courses;
+    function __construct()
+    {
+        $this->courses = Course::where("status", 1)->whereIn('id', [1, 2, 4, 5, 7, 16])->get();
+    }
     function index()
     {
         $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
@@ -208,7 +213,7 @@ class WebController extends Controller
         $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
         $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
-        $courses = Course::where("status", 1)->get();
+        $courses = $this->courses;
         $countries = Country::all();
         return view('forms.feedback', compact('title', 'description', 'keywords', 'courses', 'countries'));
     }
@@ -218,7 +223,7 @@ class WebController extends Controller
         $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
         $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
-        $courses = Course::where("status", 1)->get();
+        $courses = $this->courses;
         $countries = Country::all();
         return view('forms.student', compact('title', 'description', 'keywords', 'courses', 'countries'));
     }
@@ -228,7 +233,7 @@ class WebController extends Controller
         $title = "SQL Server, Azure, AWS Training - Empire Data Systems";
         $description = "Training in SQL Server DBA,SQL,TSQL,SSIS, Power BI,Azure Administration, Azure Data Engineering, Dev(Sec)Ops - By Daniel AG";
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
-        $courses = Course::where("status", 1)->get();
+        $courses = $this->courses;
         return view('forms.referral', compact('title', 'description', 'keywords', 'courses'));
     }
 
