@@ -81,13 +81,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div data-bs-interval="3000" class="ms-hero-img-slider carousel-item active">
-                                <img src="{{ asset('/assets/img/demo/hero1.png') }}" alt="" class="img-fluid">
+                                <img src="" alt="" class="img-fluid">
                             </div>
                             <div data-bs-interval="3000" class="ms-hero-img-slider carousel-item">
-                                <img src="{{ asset('/assets/img/demo/hero3.png') }}" alt="" class="img-fluid">
+                                <img src="" alt="" class="img-fluid">
                             </div>
                             <div data-bs-interval="3000" class="ms-hero-img-slider carousel-item">
-                                <img src="{{ asset('/assets/img/demo/hero2.png') }}" alt="" class="img-fluid">
+                                <img src="" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>

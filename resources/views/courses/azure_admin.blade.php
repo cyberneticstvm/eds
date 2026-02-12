@@ -145,7 +145,7 @@
                                     <input type="text" name="contact_phone" class="form-control" id="exampleInputEmail2" required>
                                 </div>
                                 <span class="form-group bmd-form-group col-lg-3">
-                                    <button type="submit" class="btn btn-raised btn-primary">SUBMIT</button>
+                                    <button type="submit" class="btn btn-raised btn-primary btn-submit">SUBMIT</button>
                                 </span>
                             </div>
                             {{ html()->form()->close() }}

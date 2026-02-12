@@ -70,7 +70,7 @@
                                         <input type="email" name="contact_email" id="txt-subscribe" class="form-control" required>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-raised">
+                                        <button type="submit" class="btn btn-primary btn-raised btn-submit">
                                             <i class="zmdi zmdi-email"></i> Subscribe</button>
                                     </div>
                                     {{ html()->form()->close() }}

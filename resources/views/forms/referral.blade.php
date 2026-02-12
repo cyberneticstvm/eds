@@ -50,7 +50,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-end">
-                        <button type="submit" id="btn-submit" class="btn btn-info">Submit Details</button>
+                        <button type="submit" id="btn-submit" class="btn btn-info btn-submit">Submit Details</button>
                     </div>
                 </div>
                 <div class="msg-cert"></div>

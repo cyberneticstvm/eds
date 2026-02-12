@@ -294,7 +294,7 @@ class WebController extends Controller
             $inputs["feedback_date"] = Carbon::now();
             $inputs["status"] = 13; // Pending
             $inputs["ip_address"] = $location->ip;
-            $inputs["location"] = $location->cityName;
+            $inputs["location"] = $location->regionName;
             $inputs["country"] = $location->countryName;
             StudentFeedback::create($inputs);
         endif;
@@ -309,6 +309,7 @@ class WebController extends Controller
                 "state" => $request->state,
                 "zip_code" => $request->zip_code,
                 "country" => $request->country,
+                "cert_id" => uniqueId(CertificateRequest::class, "cert_id"),
                 "status" => 16,
             ]);
         endif;

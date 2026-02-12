@@ -184,7 +184,7 @@
                                     <input type="email" name="contact_email" id="contact_email" class="form-control" required>
                                 </div>
                             </div>
-                            <button class="ms-subscribre-btn" type="submit" name="btn-subscribe" id="btn-subscribe">Subscribe</button>
+                            <button class="ms-subscribre-btn btn-submit" type="submit" name="btn-subscribe" id="btn-subscribe">Subscribe</button>
                             {{ html()->form()->close() }}
                             <div class="msg-sub"></div>
                         </div>
@@ -219,7 +219,7 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-md-12 col-md-offset-3 text-center">
-                                                <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary">Submit</button>
+                                                <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary btn-submit">Submit</button>
                                                 <button type="button" name="btn-cancel" id="btn-cancel" class="btn btn-raised btn-danger">Cancel</button>
                                             </div>
                                             <div class='msg-contact'></div>
@@ -295,6 +295,21 @@
     <script src="{{ asset('/assets/js/index.js') }}"></script>
 
     <script src="{{ asset('/assets/magnific-popup/jquery.magnific-popup.js') }}"></script>
+
+    <script>
+        $(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $('form').submit(function() {
+                $(this).find(".btn-submit").attr("disabled", true);
+                $(this).find(".btn-submit").html("Loading...<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>");
+            });
+        });
+    </script>
 
     <script type="text/javascript">
         var $zoho = $zoho || {};

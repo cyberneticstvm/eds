@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-12 col-md-offset-4 text-center">
-                                        <button type="submit" class="btn btn-raised btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-raised btn-primary btn-submit">Submit</button>
                                         <button type="button" class="btn btn-danger">Cancel</button>
                                     </div>
                                     <div class='msg-contact'></div>
