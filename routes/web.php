@@ -12,6 +12,7 @@ Route::middleware(['web'])->group(function () {
         Route::get('sql-server-training-blogs', 'blogs')->name('blogs');
         Route::get('blogs/{id}/{title}', 'blog_details')->name('blog.details');
         Route::get('contact', 'contact')->name('contact');
+        Route::get('certificate-authentication/{id}', 'cert_auth')->name('cert.auth');
         Route::get('message', 'message')->name('message');
         Route::get('sitemap.xml', 'sitemap')->name('sitemap');
         Route::get('robots.txt', 'robots')->name('robots');

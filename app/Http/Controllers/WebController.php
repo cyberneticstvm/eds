@@ -331,6 +331,13 @@ class WebController extends Controller
         return redirect()->route('message');
     }
 
+    function cert_auth(string $id)
+    {
+        $certificate = CertificateRequest::findOrFail(decrypt($id));
+        $courses = Course::where("parent_id", $certificate->course_id)->pluck("name")->explode("\n");
+        return view("cert_auth", compact('certificate', 'courses'));
+    }
+
     function sitemap()
     {
         return response()->view('sitemap')->header('Content-Type', 'text/xml');
