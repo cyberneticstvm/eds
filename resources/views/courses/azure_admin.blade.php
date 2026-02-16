@@ -127,7 +127,7 @@
                             <h3 class="text-center no-m pt-4 color-primary index-1">Talk to Ajay</h3>
                         </div>
                         <div class="card-block">
-                            {{ html()->form('POST')->route('submit.form')->open() }}
+                            {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
                             <input type="hidden" name="submit_type" value="11" />
                             <input type="hidden" name="txt_course" value="Azure Administration">
                             <input type="hidden" name="txt_trainer" value="Ajay">

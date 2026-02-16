@@ -45,7 +45,7 @@
                             <h2 class="text-center no-m pt-4 pb-4 color-white index-1">Contact Us</h2>
                         </div>
                         <div class="card-block">
-                            {{ html()->form('POST')->route('submit.form')->class("form-horizontal")->open() }}
+                            {{ html()->form('POST')->route('submit.form')->class("form-horizontal")->attribute("id", "contact-form")->open() }}
                             <input type="hidden" name="submit_type" value="10" />
                             <fieldset>
                                 <div class="form-group is-empty">
