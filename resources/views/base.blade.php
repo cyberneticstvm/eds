@@ -344,6 +344,7 @@
     <script>
         function onSubmit(token) {
             document.getElementById("contact-form").submit();
+            document.getElementById("subscribe-form").submit();
         }
     </script>
 </body>
