@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FormSubmitNotificationEmail;
 use App\Models\Blog;
 use App\Models\CertificateRequest;
 use App\Models\Country;
@@ -11,13 +12,15 @@ use App\Models\Referral;
 use App\Models\StudentFeedback;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Stevebauman\Location\Facades\Location;
 
 class WebController extends Controller
 {
-    private $courses;
+    private $courses, $admin_email;
     function __construct()
     {
+        $this->admin_email = "vijoysasidharan@yahoo.com";
         $this->courses = Course::where("status", 1)->whereIn('id', [1, 2, 4, 5, 7, 16])->get();
     }
     function index()
@@ -253,11 +256,13 @@ class WebController extends Controller
 
     function submit_form(Request $request)
     {
+        $stype = "";
         if ($request->submit_type == 17):
             $inputs = $request->validate([
                 'contact_email' => 'required|email',
                 'submit_type' => 'required',
             ]);
+            $stype = "Subscription";
         endif;
         if ($request->submit_type == 10):
             $inputs = $request->validate([
@@ -266,6 +271,7 @@ class WebController extends Controller
                 'contact_phone' => 'required',
                 'submit_type' => 'required',
             ]);
+            $stype = "Course Enquiry";
         endif;
         if ($request->submit_type == 11):
             $inputs = $request->validate([
@@ -275,8 +281,17 @@ class WebController extends Controller
                 'message' => 'required',
                 'submit_type' => 'required',
             ]);
+            $stype = "Contact";
         endif;
         FormSubmit::create($inputs);
+        $data = [
+            "stype" => $stype,
+            "name" => $request->contact_name ?? "NA",
+            "email" => $request->contact_email,
+            "phone" => $request->contact_phone ?? "NA",
+            "message" => $request->message ?? "NA"
+        ];
+        Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
         return redirect()->route('message');
     }
 
