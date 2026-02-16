@@ -29,14 +29,14 @@
                                                 <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-local-activity"></i></span>
                                             </div>
 
-                                            <div class="ms-list-text animated fadeInRight animation-delay-21">Trained 3000+ Students Across US and Canada, Consistently Exceeding Student’s Expectations. Daniel’s 90 Hours Live Interactive Online Training cost only $750 per student.</div>
+                                            <div class="animated fadeInRight animation-delay-21">Trained 3000+ Students Across US and Canada, Consistently Exceeding Student’s Expectations. Daniel’s 90 Hours Live Interactive Online Training cost only $750 per student.</div>
                                         </li>
                                         <li class="">
                                             <div class="ms-list-icon animated zoomInUp animation-delay-22">
                                                 <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-album"></i></span>
                                             </div>
 
-                                            <div class="ms-list-text animated fadeInRight animation-delay-23">Call Daniel Directly @ <a href='tel:+12677181533'><span class="color-warning"> 267 718 1533</span></a> for Your Training Needs and Career Goals.</div>
+                                            <div class="animated fadeInRight animation-delay-23">Call Daniel Directly @ <a href='tel:+12677181533'><span class="color-warning"> 267 718 1533</span></a> for Your Training Needs and Career Goals.</div>
                                         </li>
                                     </ul>
                                     <div class="ms-hero-material-buttons text-right">
