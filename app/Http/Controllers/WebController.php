@@ -218,16 +218,16 @@ class WebController extends Controller
         $title = "Refund Policy | Empire Data Systems USA";
         $description = "Review our refund policy for SQL Server, Azure, Fabric & AI training programs. Transparent enrollment and refund terms for USA professionals training with Daniel AG (MCT).";
         $keywords = "";
-        $schema = json_encode([
+        $schema = [
             "@context" => "https://schema.org",
             "@type" => "WebPage",
             "name" => "Refund Policy",
             "about" => "Training enrollment refund policy",
-            "publisher" => [
+             "publisher" => [    
                 "@type" => "Organization",
                 "name" => "Empire Data Systems"
-            ]
-        ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+             ]
+        ];
         return view('policy.refund', compact('title', 'description', 'keywords', 'schema'));
     }
 
