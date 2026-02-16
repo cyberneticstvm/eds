@@ -194,7 +194,7 @@
                             <h3 class="ms-footbar-title text-center mb-2">Contact Daniel</h3>
                             <div class="ms-footer-media">
                                 <div class="card-block">
-                                    {{ html()->form('POST')->route('submit.form')->open() }}
+                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
                                     <input type="hidden" name="submit_type" value="10" />
                                     <fieldset class="text-left">
                                         <div class="form-group is-empty">
@@ -219,7 +219,7 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-md-12 col-md-offset-3 text-center">
-                                                <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary btn-submit">Submit</button>
+                                                <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Submit</button>
                                                 <button type="button" name="btn-cancel" id="btn-cancel" class="btn btn-raised btn-danger">Cancel</button>
                                             </div>
                                             <div class='msg-contact'></div>
@@ -296,6 +296,8 @@
 
     <script src="{{ asset('/assets/magnific-popup/jquery.magnific-popup.js') }}"></script>
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
     <script>
         $(function() {
             $.ajaxSetup({
@@ -338,6 +340,11 @@
 
             fixedContentPos: false
         });
+    </script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contact-form").submit();
+        }
     </script>
 </body>
 
