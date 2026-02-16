@@ -6,12 +6,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['web'])->group(function () {
     Route::prefix('')->controller(WebController::class)->group(function () {
         Route::get('/', 'index')->name('index');
-        Route::get('about', 'about')->name('about');
+        Route::get('about-us.html', 'about')->name('about');
         Route::get('our-live-class-videos', 'videos')->name('videos');
-        Route::get('student-feedbacks', 'student_feedbacks')->name('student.feedbacks');
+        Route::get('students-feedback', 'student_feedbacks')->name('student.feedbacks');
         Route::get('sql-server-training-blogs', 'blogs')->name('blogs');
-        Route::get('blogs/{id}/{title}', 'blog_details')->name('blog.details');
-        Route::get('contact', 'contact')->name('contact');
+        Route::get('blog/{id}/{title}', 'blog_details')->name('blog.details');
+        Route::get('contact-us', 'contact')->name('contact');
         Route::get('certificate-authentication/{id}', 'cert_auth')->name('cert.auth');
         Route::get('message', 'message')->name('message');
         Route::get('sitemap.xml', 'sitemap')->name('sitemap');
