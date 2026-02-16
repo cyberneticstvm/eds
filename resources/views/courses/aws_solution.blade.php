@@ -181,7 +181,7 @@
                                     <input type="text" name="contact_phone" class="form-control" id="exampleInputEmail2" required>
                                 </div>
                                 <span class="form-group bmd-form-group col-lg-3">
-                                    <button type="submit" class="btn btn-raised btn-primary btn-submit">SUBMIT</button>
+                                    <button type="submit" class="btn btn-raised btn-primary btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>SUBMIT</button>
                                 </span>
                             </div>
                             {{ html()->form()->close() }}

@@ -70,7 +70,7 @@
                                         <input type="email" name="contact_email" id="txt-subscribe" class="form-control" required>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-raised btn-submit">
+                                        <button type="submit" class="btn btn-primary btn-raised btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>
                                             <i class="zmdi zmdi-email"></i> Subscribe</button>
                                     </div>
                                     {{ html()->form()->close() }}
