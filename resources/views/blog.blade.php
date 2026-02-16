@@ -63,7 +63,7 @@
                                 <div class="card-block-big color-dark">
                                     <h2 class="color-primary text-center">Subscribe</h2>
                                     <p class="lead text-center">Please subscribe our technical blog to get recent updates.</p>
-                                    {{ html()->form('POST')->route('submit.form')->open() }}
+                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
                                     <input type="hidden" name="submit_type" value="17" />
                                     <div class="form-group label-floating m-5">
                                         <label class="control-label" for="addon2">Enter your email</label>
