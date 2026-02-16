@@ -63,6 +63,8 @@
     <noscript>
         <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2494370&fmt=gif" />
     </noscript>
+
+    <x-schema :schema="$schema" />
 </head>
 
 <body>
