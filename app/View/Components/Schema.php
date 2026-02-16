@@ -11,8 +11,8 @@ class Schema extends Component
     /**
      * Create a new component instance.
      */
-    public array $schema;
-    public function __construct(array $schema)
+    public $schema;
+    public function __construct($schema)
     {
         $this->schema = $schema;
     }
