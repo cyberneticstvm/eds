@@ -28,7 +28,13 @@ class WebController extends Controller
         $title = "SQL Server DBA, Azure Fabric & AWS Training | Daniel AG (MCT USA)";
         $description = "Live instructor-led SQL Server DBA, Azure Fabric, Azure SQL, AWS & Azure AI training by USA-based Microsoft Certified Trainer Daniel AG. Hands-on labs, recordings & real-world projects.";
         $keywords = "";
-        $schema = [];
+        $schema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Organization',
+            'name' => 'Empire Data Systems LLC',
+            'url' => 'https://empiredatasystems.com',
+            'logo' => 'https://empiredatasystems.com/assets/img/favicon.png',
+        ];
         return view('index', compact('title', 'description', 'keywords', 'schema'));
     }
 
