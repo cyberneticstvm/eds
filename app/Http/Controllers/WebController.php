@@ -283,7 +283,7 @@ class WebController extends Controller
             ]);
             $stype = "Contact";
         endif;
-        FormSubmit::create($inputs);
+        //FormSubmit::create($inputs);
         $data = [
             "stype" => $stype,
             "name" => $request->contact_name ?? "NA",
