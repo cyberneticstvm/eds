@@ -22,7 +22,7 @@
                                                 <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp"><i class="zmdi zmdi-city"></i></span>
                                             </div>
 
-                                            <div class="ms-list-text animated fadeInRight animation-delay-19">US Based Database/Azure/AWS/AI Architect with 16 Years’ Extensive Experience in Database Administration, SQL Programming, Business Intelligence Development, Azure Administration, Azure Fabric and Data Engineering etc..</div>
+                                            <div class="animated fadeInRight animation-delay-19">US Based Database/Azure/AWS/AI Architect with 16 Years’ Extensive Experience in Database Administration, SQL Programming, Business Intelligence Development, Azure Administration, Azure Fabric and Data Engineering etc..</div>
                                         </li>
                                         <li class="">
                                             <div class="ms-list-icon animated zoomInUp animation-delay-20">
