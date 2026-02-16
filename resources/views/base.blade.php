@@ -175,7 +175,7 @@
                         <div class="ms-footbar-block">
                             <h3 class="ms-footbar-title">Subscribe</h3>
                             <p class="">Your career is your responsibility. Please subscribe and stay in touch. Call me directly @ <a href="tel: +1267 718 1533" class='color-warning'>267 718 1533</a> with any of your questions - Daniel AG</p>
-                            {{ html()->form('POST')->route('submit.form')->open() }}
+                            {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
                             <input type="hidden" name="submit_type" value="17" />
                             <div class="form-group label-floating mt-2 mb-1">
                                 <div class="input-group ms-input-subscribe">
@@ -184,7 +184,7 @@
                                     <input type="email" name="contact_email" id="contact_email" class="form-control" required>
                                 </div>
                             </div>
-                            <button class="ms-subscribre-btn btn-submit" type="submit" name="btn-subscribe" id="btn-subscribe">Subscribe</button>
+                            <button class="ms-subscribre-btn btn-submit g-recaptcha" type="submit" name="btn-subscribe" id="btn-subscribe" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Subscribe</button>
                             {{ html()->form()->close() }}
                             <div class="msg-sub"></div>
                         </div>
@@ -194,7 +194,7 @@
                             <h3 class="ms-footbar-title text-center mb-2">Contact Daniel</h3>
                             <div class="ms-footer-media">
                                 <div class="card-block">
-                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
+                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "subscribe-form")->open() }}
                                     <input type="hidden" name="submit_type" value="10" />
                                     <fieldset class="text-left">
                                         <div class="form-group is-empty">
