@@ -302,7 +302,7 @@
 
     <script src="{{ asset('/assets/magnific-popup/jquery.magnific-popup.js') }}"></script>
 
-    <script src="https://www.google.com/recaptcha/api.js?render={{ Config::get('myconfig.captcha.sitekey') }}"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{ config('myconfig.captcha.sitekey') }}"></script>
 
     <script>
         $(function() {
@@ -352,7 +352,7 @@
             e.preventDefault();
 
             grecaptcha.ready(function() {
-                grecaptcha.execute("{{ Config::get('myconfig.captcha.sitekey') }}", {
+                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                     action: 'submit'
                 }).then(function(token) {
                     document.getElementById('g-recaptcha-response').value = token;
