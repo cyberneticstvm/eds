@@ -46,6 +46,7 @@
                         </div>
                         <div class="card-block">
                             {{ html()->form('POST')->route('submit.form')->class("form-horizontal")->attribute("id", "contact-form")->open() }}
+                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                             <input type="hidden" name="submit_type" value="10" />
                             <fieldset>
                                 <div class="form-group is-empty">
@@ -70,7 +71,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-12 col-md-offset-4 text-center">
-                                        <button type="submit" class="btn btn-raised btn-primary btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Submit</button>
+                                        <button type="submit" class="btn btn-raised btn-primary btn-submit">Submit</button>
                                         <button type="button" class="btn btn-danger">Cancel</button>
                                     </div>
                                     <div class='msg-contact'></div>
