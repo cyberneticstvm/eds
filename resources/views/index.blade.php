@@ -107,7 +107,7 @@
                 </span>
                 <h4 class="color-primary">SQL Server DBA + SQL Programming + Azure SQL Training</h4>
                 <p class="">100 hour comprehensive training covering both database administration and TSQL Programming...</p>
-                <a href="sql-server-dba-training.html" class="btn btn-primary btn-raised">Know More</a>
+                <a href="{{ route('course.sql.dba') }}" class="btn btn-primary btn-raised">Know More</a>
             </div>
         </div>
         <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
@@ -117,7 +117,7 @@
                 </span>
                 <h4 class="color-warning">SQL Server BI Training + Power BI Training</h4>
                 <p class="">70 hour comprehensive training covering SSIS, SSAS, MDX, SSRS, Power BI and Data Warehousing...</p>
-                <a href="sql-server-bi-training.html" class="btn btn-warning btn-raised">Know More</a>
+                <a href="{{ route('course.sql.bi') }}" class="btn btn-warning btn-raised">Know More</a>
             </div>
         </div>
         <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
@@ -127,7 +127,7 @@
                 </span>
                 <h4 class="color-danger">Microsoft Azure Administration Training</h4>
                 <p class="">50 hour comprehensive training on Implementation, Management and Monitoring of Microsoft Azure Assets.</p>
-                <a href="microsoft-azure-training.html" class="btn btn-danger btn-raised">Know More</a>
+                <a href="{{ route('course.azure.admin') }}" class="btn btn-danger btn-raised">Know More</a>
             </div>
         </div>
         <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
@@ -137,7 +137,7 @@
                 </span>
                 <h4 class="color-royal">Microsoft Azure Fabric<br> and Data Engineering</h4>
                 <p class="">40-hour comprehensive training covering Azure Databricks, Delta Lake, Data Factory, Synapse, HDInsight,...</p>
-                <a href="microsoft-azure-data-engineering.html" class="btn btn-royal btn-raised">Know More</a>
+                <a href="{{ route('course.azure.fabric') }}" class="btn btn-royal btn-raised">Know More</a>
             </div>
         </div>
         <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
@@ -147,7 +147,7 @@
                 </span>
                 <h4 class="color-warning">AWS Solutions Architect Associate</h4>
                 <p class="">Our AWS Solutions Architect – Associate course is intended for every aspersing individual who want to learn and perform an ..</p>
-                <a href="aws-solutions-architect-associate-training.html" class="btn btn-warning btn-raised">Know More</a>
+                <a href="{{ route('course.aws.solution') }}" class="btn btn-warning btn-raised">Know More</a>
             </div>
         </div>
         <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
@@ -157,7 +157,7 @@
                 </span>
                 <h4 class="color-primary">Microsoft Azure AI Engineering</h4>
                 <p class="">Azure AI Services are transforming what was once considered unachievable into attainable projects. In this course, ...</p>
-                <a href="microsoft-azure-ai-solution-training.html" class="btn btn-primary btn-raised">Know More</a>
+                <a href="{{ route('course.azure.ai') }}" class="btn btn-primary btn-raised">Know More</a>
             </div>
         </div>
     </div>
@@ -382,7 +382,7 @@
                     </li>
                 </ul>
                 <div class="text-center">
-                    <a href="sql-server-dba-training.html" class="btn btn-info btn-raised">
+                    <a href="{{ route('course.sql.dba') }}" class="btn btn-info btn-raised">
                         <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
                 </div>
             </div>
@@ -426,7 +426,7 @@
                     </li>
                 </ul>
                 <div class="text-center">
-                    <a href="sql-server-bi-training.html" class="btn btn-success btn-raised">
+                    <a href="{{ route('course.azure.fabric') }}" class="btn btn-success btn-raised">
                         <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
                 </div>
             </div>
@@ -470,7 +470,7 @@
                     </li>
                 </ul>
                 <div class="text-center">
-                    <a href="sql-server-performance-tuning-training.html" class="btn btn-warning btn-raised">
+                    <a href="{{ route('course.azure.admin') }}" class="btn btn-warning btn-raised">
                         <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
                 </div>
             </div>
@@ -648,7 +648,7 @@
                 <h3 class="color-primary">Why we are #1 in USA?</h3>
                 <p>Our founder Daniel AG believes in nothing less than perfect, and personally monitors every single course. Mr.Daniel is available to talk to you any time, </p>
                 <p class="text-right">
-                    <a href="why-we-are-in-usa.html" class="btn btn-primary btn-raised text-right" role="button">
+                    <a href="{{ route('faq.why.we.are') }}" class="btn btn-primary btn-raised text-right" role="button">
                         <i class="zmdi zmdi-collection-image-o"></i> View More</a>
                 </p>
             </div>
@@ -658,7 +658,7 @@
                 <h3 class="">How to Find a Good Trainer?</h3>
                 <p>The choice of a good IT trainer could make or break your IT career. If you work with a good trainer, you are bound to take your career from one success to another.</p>
                 <p class="text-right">
-                    <a href="how-to-find-good-trainer.html" class="btn btn-info btn-raised text-right" role="button">
+                    <a href="{{ route('faq.how.to.find') }}" class="btn btn-info btn-raised text-right" role="button">
                         <i class="zmdi zmdi-collection-image-o"></i> View More</a>
                 </p>
             </div>
@@ -668,7 +668,7 @@
                 <h3 class="color-primary">Why DBA and Azure Career are the best?</h3>
                 <p>Here are the practical reasons why the DBA/Azure profession is always “THE BEST”. Better pay, High and consistent demand in the job market</p>
                 <p class="text-right">
-                    <a href="why-dba-bi-career.html" class="btn btn-primary btn-raised text-right" role="button">
+                    <a href="{{ route('faq.why.dba.and.bi') }}" class="btn btn-primary btn-raised text-right" role="button">
                         <i class="zmdi zmdi-collection-image-o"></i> View More</a>
                 </p>
             </div>
@@ -703,7 +703,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <h5 class="text-center mb-2 wow fadeInDown animation-delay-4"><a href="our-live-class-videos.html">Watch More Videos</a></h5>
+            <h5 class="text-center mb-2 wow fadeInDown animation-delay-4"><a href="{{ route('videos') }}">Watch More Videos</a></h5>
         </div>
     </div>
 </div>

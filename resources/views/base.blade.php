@@ -86,7 +86,7 @@
         <header class="ms-header ms-header-primary"> <!--ms-header-primary-->
             <div class="container container-full">
                 <div class="ms-title">
-                    <a href="index.html">
+                    <a href="{{ route('index') }}">
                         <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
                         <span class="ms-logo animated zoomInDown animation-delay-5">E</span>
                         <h1 class="animated fadeInRight animation-delay-6">Empire <span>Data Systems</span></h1>
@@ -121,7 +121,7 @@
         <nav class="navbar navbar-expand-md  navbar-static ms-navbar ms-navbar-primary">
             <div class="container container-full">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ route('index') }}">
                         <!-- <img src="assets/img/demo/logo-navbar.png" alt=""> -->
                         <span class="ms-logo ms-logo-sm">E</span>
                         <span class="ms-title">Empire <strong>Data Systems</strong></span>
