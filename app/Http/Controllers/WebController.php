@@ -229,10 +229,10 @@ class WebController extends Controller
             "@type" => "WebPage",
             "name" => "Refund Policy",
             "about" => "Training enrollment refund policy",
-             "publisher" => [    
+            "publisher" => [
                 "@type" => "Organization",
                 "name" => "Empire Data Systems"
-             ]
+            ]
         ];
         return view('policy.refund', compact('title', 'description', 'keywords', 'schema'));
     }
@@ -284,7 +284,7 @@ class WebController extends Controller
         $keywords = "SQL Server Database Administartion Training, SQL Server Business Intelligence Training, SQL Server Training, SQL Server DBA Training, MSBI Training, Azure Data Engineering Training,Dev(Sec)Ops Training";
         $courses = $this->courses;
         $schema = [];
-        return view('forms.referral', compact('title', 'description', 'keywords', 'courses', 'shema'));
+        return view('forms.referral', compact('title', 'description', 'keywords', 'courses', 'schema'));
     }
 
     function message()

@@ -16,6 +16,7 @@
         <div class="card-body">
             {{ html()->form('POST')->route('submit.feedback.form')->class("form-horizontal")->attribute("id", "contact-form")->open() }}
             <input type="hidden" name="stype" value="3">
+            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
             <div class="modal-header">
                 <h3 class="modal-title" id="myModalLabel6">Mailing Address - Course Complete Certificate</h3>
             </div>
@@ -52,7 +53,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-end">
-                        <button type="submit" id="btn-submit" class="btn btn-info btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Submit Details</button>
+                        <button type="submit" class="btn btn-info btn-submit">Submit Details</button>
                     </div>
                 </div>
                 <div class="msg-cert"></div>
