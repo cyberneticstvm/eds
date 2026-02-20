@@ -384,7 +384,7 @@ class WebController extends Controller
             'ref_phone' => 'required',
             'course_id' => 'required',
         ]);
-        Referral::create($inputs);
+        //Referral::create($inputs);
         return redirect()->route('message');
     }
 
