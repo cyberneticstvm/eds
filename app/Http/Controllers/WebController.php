@@ -334,11 +334,7 @@ class WebController extends Controller
             "phone" => $request->contact_phone ?? "NA",
             "message" => $request->message ?? "NA"
         ];
-        try {
-            Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
-        } catch (TransportExceptionInterface $e) {
-            return redirect()->route()->with("message", $e->getMessage());
-        }
+        Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
 
         return redirect()->route('message');
     }
