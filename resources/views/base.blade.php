@@ -348,7 +348,7 @@
         });
     </script>
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function(e) {
+        /*document.getElementById("contact-form").addEventListener("submit", function(e) {
             e.preventDefault();
 
             grecaptcha.ready(function() {
@@ -360,7 +360,7 @@
                 });
             });
         });
-        /*document.getElementById("contact-form-footer").addEventListener("submit", function(e) {
+        document.getElementById("contact-form-footer").addEventListener("submit", function(e) {
             e.preventDefault();
 
             grecaptcha.ready(function() {
