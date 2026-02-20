@@ -188,7 +188,7 @@
                                     <input type="email" name="contact_email" id="contact_email" class="form-control" required>
                                 </div>
                             </div>
-                            <button class="ms-subscribre-btn btn-submit g-recaptcha" type="submit" name="btn-subscribe" id="btn-subscribe" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Subscribe</button>
+                            <button class="ms-subscribre-btn btn-submit g-recaptcha" type="submit" name="btn-subscribe" id="btn-subscribe">Subscribe</button>
                             {{ html()->form()->close() }}
                             <div class="msg-sub"></div>
                         </div>
