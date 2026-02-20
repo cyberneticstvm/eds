@@ -223,7 +223,7 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-md-12 col-md-offset-3 text-center">
-                                                <button type="submit" name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Submit</button>
+                                                <button name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Submit</button>
                                                 <button type="button" name="btn-cancel" id="btn-cancel" class="btn btn-raised btn-danger">Cancel</button>
                                             </div>
                                             <div class='msg-contact'></div>
