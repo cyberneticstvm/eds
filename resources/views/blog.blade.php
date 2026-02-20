@@ -64,13 +64,14 @@
                                     <h2 class="color-primary text-center">Subscribe</h2>
                                     <p class="lead text-center">Please subscribe our technical blog to get recent updates.</p>
                                     {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
+                                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                                     <input type="hidden" name="submit_type" value="17" />
                                     <div class="form-group label-floating m-5">
                                         <label class="control-label" for="addon2">Enter your email</label>
                                         <input type="email" name="contact_email" id="txt-subscribe" class="form-control" required>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-raised btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>
+                                        <button type="submit" class="btn btn-primary btn-raised btn-submit ">
                                             <i class="zmdi zmdi-email"></i> Subscribe</button>
                                     </div>
                                     {{ html()->form()->close() }}
