@@ -180,6 +180,7 @@
                             <h3 class="ms-footbar-title">Subscribe</h3>
                             <p class="">Your career is your responsibility. Please subscribe and stay in touch. Call me directly @ <a href="tel: +1267 718 1533" class='color-warning'>267 718 1533</a> with any of your questions - Daniel AG</p>
                             {{ html()->form('POST')->route('submit.form')->attribute("id", "subscribe-form")->open() }}
+                            <input type="hidden" name="g-recaptcha-response">
                             <input type="hidden" name="submit_type" value="17" />
                             <div class="form-group label-floating mt-2 mb-1">
                                 <div class="input-group ms-input-subscribe">
@@ -188,7 +189,7 @@
                                     <input type="email" name="contact_email" id="contact_email" class="form-control" required>
                                 </div>
                             </div>
-                            <button class="ms-subscribre-btn btn-submit g-recaptcha" name="btn-subscribe" id="btn-subscribe" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Subscribe</button>
+                            <button type="submit" class="ms-subscribre-btn btn-submit">Subscribe</button>
                             {{ html()->form()->close() }}
                             <div class="msg-sub"></div>
                         </div>
@@ -199,6 +200,7 @@
                             <div class="ms-footer-media">
                                 <div class="card-block">
                                     {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
+                                    <input type="hidden" name="g-recaptcha-response">
                                     <input type="hidden" name="submit_type" value="10" />
                                     <fieldset class="text-left">
                                         <div class="form-group is-empty">
@@ -223,7 +225,7 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-md-12 col-md-offset-3 text-center">
-                                                <button name="btn-contact" id="btn-contact" class="btn btn-raised btn-primary btn-submit g-recaptcha" data-sitekey="6LceimwsAAAAAMOs0W5YBz2DiUbeRrxPy4aLlc2u" data-callback='onSubmit' data-action='submit'>Submit</button>
+                                                <button type="submit" class="btn btn-raised btn-primary btn-submit">Submit</button>
                                                 <button type="button" name="btn-cancel" id="btn-cancel" class="btn btn-raised btn-danger">Cancel</button>
                                             </div>
                                             <div class='msg-contact'></div>
@@ -300,7 +302,7 @@
 
     <script src="{{ asset('/assets/magnific-popup/jquery.magnific-popup.js') }}"></script>
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{ Config::get('myconfig.captcha.sitekey') }}"></script>
 
     <script>
         $(function() {
@@ -346,9 +348,18 @@
         });
     </script>
     <script>
-        function onSubmit(token) {
-            document.getElementById("contact-form").submit();
-        }
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            grecaptcha.ready(function() {
+                grecaptcha.execute("{{ Config::get('myconfig.captcha.sitekey') }}", {
+                    action: 'submit'
+                }).then(function(token) {
+                    document.getElementById('g-recaptcha-response').value = token;
+                    document.getElementById("contact-form").submit();
+                });
+            });
+        });
     </script>
 </body>
 
