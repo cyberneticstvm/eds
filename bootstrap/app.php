@@ -17,7 +17,7 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->renderable(function (ErrorException $e) {
-            return response()->view('error', ['exception' => $e]);
+            return response()->view('errors.500', ['exception' => $e]);
         });
         $exceptions->renderable(function (TransportExceptionInterface $e) {
             return response()->view('errors.500', ['exception' => $e]);
