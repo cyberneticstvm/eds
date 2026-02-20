@@ -8,6 +8,7 @@
                     <div class="text-center">
                         <h1 class="color-primary">Error 500</h1>
                         <h2>Internal Server Error</h2>
+                        <p>{{ $exception->getMessage() }}</p>
                         <p class="lead lead-sm">Something has gone wrong we are trying to fix it.<br>Meanwhile you can go back to the homepage.</p>
                         <a href="{{ route('index') }}" class="btn btn-primary btn-raised"><i class="zmdi zmdi-home"></i> Go Home</a>
                     </div>
