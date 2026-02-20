@@ -360,7 +360,7 @@
                 });
             });
         });
-        document.getElementById("contact-form-footer").addEventListener("submit", function(e) {
+        /*document.getElementById("contact-form-footer").addEventListener("submit", function(e) {
             e.preventDefault();
 
             grecaptcha.ready(function() {
@@ -383,7 +383,7 @@
                     document.getElementById("subscriber-form").submit();
                 });
             });
-        });
+        });*/
     </script>
 </body>
 
