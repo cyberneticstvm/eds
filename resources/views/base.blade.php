@@ -348,7 +348,7 @@
         });
     </script>
     <script>
-        /*document.getElementById("contact-form").addEventListener("submit", function(e) {
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
             e.preventDefault();
 
             grecaptcha.ready(function() {
@@ -383,7 +383,7 @@
                     document.getElementById("subscriber-form").submit();
                 });
             });
-        });*/
+        });
     </script>
 </body>
 
