@@ -337,7 +337,7 @@ class WebController extends Controller
         try {
             Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
         } catch (TransportExceptionInterface $e) {
-            return redirect()->back()->with("message", $e->getMessage());
+            return redirect()->route()->with("message", $e->getMessage());
         }
 
         return redirect()->route('message');
