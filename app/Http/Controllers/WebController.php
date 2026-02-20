@@ -306,7 +306,7 @@ class WebController extends Controller
             ]);
             $stype = "Subscription";
         endif;
-        if ($request->submit_type == 10):
+        if ($request->submit_type == 11):
             $inputs = $request->validate([
                 'contact_name' => 'required',
                 'contact_email' => 'required|email',
@@ -315,7 +315,7 @@ class WebController extends Controller
             ]);
             $stype = "Course Enquiry";
         endif;
-        if ($request->submit_type == 11):
+        if ($request->submit_type == 10):
             $inputs = $request->validate([
                 'contact_name' => 'required',
                 'contact_email' => 'required|email',
