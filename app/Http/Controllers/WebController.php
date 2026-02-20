@@ -14,6 +14,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Stevebauman\Location\Facades\Location;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 
 class WebController extends Controller
 {
@@ -333,7 +334,12 @@ class WebController extends Controller
             "phone" => $request->contact_phone ?? "NA",
             "message" => $request->message ?? "NA"
         ];
-        Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
+        try {
+            Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
+        } catch (TransportExceptionInterface $e) {
+            return redirect()->back()->with("message", $e->getMessage());
+        }
+
         return redirect()->route('message');
     }
 
