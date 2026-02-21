@@ -53,7 +53,7 @@
             <div class="modal-header">
                 <h3 class="modal-title" id="myModalLabel6">Submit your Feedback</h3>
             </div>
-            {{ html()->form('POST')->route('submit.feedback.form')->open() }}
+            {{ html()->form('POST')->route('submit.feedback.form')->attribute("id", "contact-form")->open() }}
             <input type="hidden" name="stype" value="1">
             <div class="modal-body">
                 <div class="row">
