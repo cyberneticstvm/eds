@@ -14,14 +14,14 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Stevebauman\Location\Facades\Location;
-use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 
 class WebController extends Controller
 {
     private $courses, $admin_email;
     function __construct()
     {
-        $this->admin_email = "vijoysasidharan@yahoo.com";
+        //$this->admin_email = "vijoysasidharan@yahoo.com";
+        $this->admin_email = "ag.daniel@empiredatasystems.com";
         $this->courses = Course::where("status", 1)->whereIn('id', [1, 2, 4, 5, 7, 16])->get();
     }
     function index()
