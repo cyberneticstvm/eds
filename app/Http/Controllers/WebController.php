@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\FeedbackSubmitNotificationEmail;
 use App\Mail\FormSubmitNotificationEmail;
+use App\Mail\ReferralSubmitNotificationEmail;
 use App\Models\Blog;
 use App\Models\CertificateRequest;
 use App\Models\Country;
@@ -402,7 +403,9 @@ class WebController extends Controller
             'g-recaptcha-response' => 'required',
         ]);
         unset($inputs['g-recaptcha-response']);
-        //Referral::create($inputs);
+        Referral::create($inputs);
+        $inputs['course_name'] = Course::find($request->course_id)->name;
+        Mail::to($this->admin_email)->send(new ReferralSubmitNotificationEmail($inputs));
         return redirect()->route('message');
     }
 
