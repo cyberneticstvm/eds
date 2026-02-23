@@ -323,7 +323,7 @@
                         action: 'submit'
                     }).then(function(token) {
                         alert(cls)
-                        dis.val(token);
+                        cls.val(token);
                     });
                 });
             });
