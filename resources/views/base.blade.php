@@ -323,9 +323,9 @@
                         action: 'submit'
                     }).then(function(token) {
                         cls.val(token);
-                        dis.submit();
                     });
                 });
+                dis.submit();
             });
         });
     </script>
