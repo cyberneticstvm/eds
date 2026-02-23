@@ -333,7 +333,7 @@ class WebController extends Controller
             $stype = "Contact";
             $source = $request->source;
         endif;
-        //FormSubmit::create($inputs);
+        FormSubmit::create($inputs);
         $data = [
             "stype" => $stype,
             "source" => $source,
@@ -403,7 +403,7 @@ class WebController extends Controller
             'g-recaptcha-response' => 'required',
         ]);
         unset($inputs['g-recaptcha-response']);
-        //Referral::create($inputs);
+        Referral::create($inputs);
         $inputs['course_name'] = Course::find($request->course_id)->name;
         Mail::to($this->admin_email)->send(new ReferralSubmitNotificationEmail($inputs));
         return redirect()->route('message');
