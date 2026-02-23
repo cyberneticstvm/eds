@@ -361,6 +361,19 @@
                 });
             });
         });
+        document.getElementById("subscriber-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            grecaptcha.ready(function() {
+                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
+                    action: 'submit'
+                }).then(function(token) {
+                    console.log(token);
+                    document.getElementById('g-recaptcha-response-sub').value = token;
+                    document.getElementById("contact-form").submit();
+                });
+            });
+        });
     </script>
 </body>
 
