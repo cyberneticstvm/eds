@@ -340,7 +340,7 @@
         });
     </script>
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         var $zoho = $zoho || {};
         $zoho.salesiq = $zoho.salesiq || {
             widgetcode: "e3c9e8ecee50e16e18ef92e231b4702d5e396c37cabfd717fd0fc1dbcabda217d38371123591d7b5fffe6abfafc2c261",
@@ -356,7 +356,14 @@
         t = d.getElementsByTagName("script")[0];
         t.parentNode.insertBefore(s, t);
         d.write("<div id='zsiqwidget'></div>");
+    </script>-->
+    <script>
+        window.$zoho = window.$zoho || {};
+        $zoho.salesiq = $zoho.salesiq || {
+            ready: function() {}
+        }
     </script>
+    <script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqcbd8c8bade8013c5c0e404974353bd293478963ab23f62caa0045695e3f6dcac" defer></script>
     <script type="text/javascript">
         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
             disableOn: 700,
