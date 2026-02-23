@@ -13,6 +13,8 @@
     <p>Email: {{ $data['email'] }}</p>
     <p>Phone: {{ $data['phone'] }}</p>
     <p>Message: {{ $data['message'] }}</p>
+    <p>Course: {{ $data['course'] }}</p>
+    <p>Trainer: {{ $data['trainer'] }}</p>
     <br>
     <br>
     Please review and respond to the inquiry at your earliest convenience.

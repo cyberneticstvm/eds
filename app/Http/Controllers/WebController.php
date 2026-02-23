@@ -339,7 +339,9 @@ class WebController extends Controller
             "name" => $request->contact_name ?? "NA",
             "email" => $request->contact_email,
             "phone" => $request->contact_phone ?? "NA",
-            "message" => $request->message ?? "NA"
+            "message" => $request->message ?? "NA",
+            "course" => $request->txt_course ?? "NA",
+            "trainer" => $request->txt_trainer ?? "NA",
         ];
         Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
         return redirect()->route('message');
