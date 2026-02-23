@@ -320,9 +320,9 @@
                 let cls = dis.find(".g-recaptcha-response");
                 grecaptcha.ready(function() {
                     grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
-                        action: 'submit'
+                        action: dis.attr("action")
                     }).then(function(token) {
-                        dis.submit();
+                        cls.val(token);
                     });
                 });
             });
