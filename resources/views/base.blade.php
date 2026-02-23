@@ -355,7 +355,7 @@
                 grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                     action: 'submit'
                 }).then(function(token) {
-                    alert(token);
+                    console.log(token);
                     document.getElementById('g-recaptcha-response').value = token;
                     document.getElementById("contact-form").submit();
                 });
