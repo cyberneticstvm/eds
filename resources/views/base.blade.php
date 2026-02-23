@@ -312,13 +312,11 @@
                 }
             });
 
-            $('form').submit(function(e) {
+            $('.btn-submit').click(function(e) {
                 //$(this).find(".btn-submit").attr("disabled", true);
-                $(this).find(".btn-submit").html("Loading...<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>");
-                let form = $(this);
+                $(this).html("Loading...<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>");
+                let form = $(this).closest("form");
                 let cls = form.find(".g-recaptcha-response");
-                if (!cls.val())
-                    e.preventDefault();
                 grecaptcha.ready(function() {
                     grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                         action: 'submit'
