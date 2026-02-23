@@ -55,6 +55,7 @@
             </div>
             {{ html()->form('POST')->route('submit.feedback.form')->attribute("id", "contact-form")->open() }}
             <input type="hidden" name="stype" value="1">
+            <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
             <div class="modal-body">
                 <div class="row">
                     <div class="form-group">

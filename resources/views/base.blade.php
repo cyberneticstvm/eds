@@ -202,6 +202,7 @@
                                     {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form-footer")->open() }}
                                     <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
                                     <input type="hidden" name="submit_type" value="10" />
+                                    <input type="hidden" name="source" value="Footer" />
                                     <fieldset class="text-left">
                                         <div class="form-group is-empty">
                                             <div class="col-md-12">

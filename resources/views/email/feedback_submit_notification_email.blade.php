@@ -9,7 +9,7 @@
     <p>You have received a new feedback. Please find the details below:</p>
     <p>Student Name: {{ $data['student'] }}</p>
     <br>
-    Please review and respond to the inquiry at your earliest convenience.
+    Please review and respond to the feedback at your earliest convenience.
 
     Regards,
     www.empiredatasystems.com

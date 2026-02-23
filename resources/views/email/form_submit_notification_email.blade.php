@@ -8,6 +8,7 @@
     <h2>Hello Daniel,</h2>
     <p>You have received a new form submission from your website. Please find the details below:</p>
     <p>Submit Type: {{ $data['stype'] }}</p>
+    <p>Source: {{ $data['source'] }}</p>
     <p>Name: {{ $data['name'] }}</p>
     <p>Email: {{ $data['email'] }}</p>
     <p>Phone: {{ $data['phone'] }}</p>

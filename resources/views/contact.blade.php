@@ -48,6 +48,7 @@
                             {{ html()->form('POST')->route('submit.form')->class("form-horizontal")->attribute("id", "contact-form")->open() }}
                             <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
                             <input type="hidden" name="submit_type" value="10" />
+                            <input type="hidden" name="source" value="Page" />
                             <fieldset>
                                 <div class="form-group is-empty">
                                     <div class="col-md-12">

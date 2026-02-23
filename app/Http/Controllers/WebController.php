@@ -300,14 +300,14 @@ class WebController extends Controller
 
     function submit_form(Request $request)
     {
-        $stype = "";
+        $stype = "Subscription";
+        $source = "Subscription";
         if ($request->submit_type == 17):
             $inputs = $request->validate([
                 'contact_email' => 'required|email',
                 'submit_type' => 'required',
                 'g-recaptcha-response' => 'required',
             ]);
-            $stype = "Subscription";
         endif;
         if ($request->submit_type == 11):
             $inputs = $request->validate([
@@ -318,6 +318,7 @@ class WebController extends Controller
                 'g-recaptcha-response' => 'required',
             ]);
             $stype = "Course Enquiry";
+            $source = $request->source;
         endif;
         if ($request->submit_type == 10):
             $inputs = $request->validate([
@@ -329,10 +330,12 @@ class WebController extends Controller
                 'g-recaptcha-response' => 'required',
             ]);
             $stype = "Contact";
+            $source = $request->source;
         endif;
         //FormSubmit::create($inputs);
         $data = [
             "stype" => $stype,
+            "source" => $source,
             "name" => $request->contact_name ?? "NA",
             "email" => $request->contact_email,
             "phone" => $request->contact_phone ?? "NA",
