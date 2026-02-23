@@ -355,7 +355,7 @@
                 grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                     action: 'submit'
                 }).then(function(token) {
-                    console.log(token);
+                    alert(token);
                     document.getElementById('g-recaptcha-response').value = token;
                     document.getElementById("contact-form").submit();
                 });
@@ -368,7 +368,7 @@
                 grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                     action: 'submit'
                 }).then(function(token) {
-                    console.log(token);
+                    alert(token);
                     document.getElementById('g-recaptcha-response-sub').value = token;
                     document.getElementById("contact-form").submit();
                 });
