@@ -128,7 +128,7 @@
                         </div>
                         <div class="card-block">
                             {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
-                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                            <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
                             <input type="hidden" name="submit_type" value="11" />
                             <input type="hidden" name="txt_course" value="Azure Administration">
                             <input type="hidden" name="txt_trainer" value="Ajay">

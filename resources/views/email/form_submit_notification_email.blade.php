@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <h2>Hello Daniel, !</h2>
+    <h2>Hello Daniel,</h2>
     <p>You have received a new form submission from your website. Please find the details below:</p>
     <p>Submit Type: {{ $data['stype'] }}</p>
     <p>Name: {{ $data['name'] }}</p>

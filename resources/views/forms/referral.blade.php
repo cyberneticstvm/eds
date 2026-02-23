@@ -13,7 +13,7 @@
     <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
         <div class="card-body">
             {{ html()->form('POST')->route('submit.referral.form')->class("form-horizontal")->attribute("id", "contact-form")->open() }}
-            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+            <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
             <div class="modal-header">
                 <h3 class="modal-title" id="myModalLabel6">Submit Your Referral</h3>
             </div>

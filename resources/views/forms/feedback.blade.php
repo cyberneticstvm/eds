@@ -16,7 +16,7 @@
     <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
         <div class="card-body">
             {{ html()->form('POST')->route('submit.feedback.form')->class("form-horizontal")->attribute("id", "contact-form")->open() }}
-            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+            <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
             <input type="hidden" name="stype" value="2">
             <div class="modal-header">
                 <h3 class="modal-title" id="myModalLabel6">Submit Your Feedback and Mailing Address</h3>

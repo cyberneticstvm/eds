@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FeedbackSubmitNotificationEmail;
 use App\Mail\FormSubmitNotificationEmail;
 use App\Models\Blog;
 use App\Models\CertificateRequest;
@@ -337,8 +338,7 @@ class WebController extends Controller
             "phone" => $request->contact_phone ?? "NA",
             "message" => $request->message ?? "NA"
         ];
-        Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
-
+        //Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
         return redirect()->route('message');
     }
 
@@ -346,6 +346,7 @@ class WebController extends Controller
     {
         $inputs = $request->validate([
             'student_name' => 'required',
+            'g-recaptcha-response' => 'required',
         ]);
         if ($request->stype == 1 || $request->stype == 2):
             $location = Location::get($request->ip);
@@ -375,6 +376,10 @@ class WebController extends Controller
                 "status" => 16,
             ]);
         endif;
+        $data = [
+            "student" => $request->student_name
+        ];
+        Mail::to($this->admin_email)->send(new FeedbackSubmitNotificationEmail($data));
         return redirect()->route('message');
     }
 
@@ -388,6 +393,7 @@ class WebController extends Controller
             'ref_email' => 'required|email',
             'ref_phone' => 'required',
             'course_id' => 'required',
+            'g-recaptcha-response' => 'required',
         ]);
         //Referral::create($inputs);
         return redirect()->route('message');
