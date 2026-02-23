@@ -179,8 +179,8 @@
                         <div class="ms-footbar-block">
                             <h3 class="ms-footbar-title">Subscribe</h3>
                             <p class="">Your career is your responsibility. Please subscribe and stay in touch. Call me directly @ <a href="tel: +1267 718 1533" class='color-warning'>267 718 1533</a> with any of your questions - Daniel AG</p>
-                            {{ html()->form('POST')->route('submit.form')->attribute("id", "subscriber-form")->open() }}
-                            <input type="hidden" name="g-recaptcha-response-sub" id="g-recaptcha-response-sub">
+                            {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
+                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                             <input type="hidden" name="submit_type" value="17" />
                             <div class="form-group label-floating mt-2 mb-1">
                                 <div class="input-group ms-input-subscribe">
@@ -199,8 +199,8 @@
                             <h3 class="ms-footbar-title text-center mb-2">Contact Daniel</h3>
                             <div class="ms-footer-media">
                                 <div class="card-block">
-                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form-footer")->open() }}
-                                    <input type="hidden" name="g-recaptcha-response-foot" id="g-recaptcha-response-foot">
+                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
+                                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                                     <input type="hidden" name="submit_type" value="10" />
                                     <fieldset class="text-left">
                                         <div class="form-group is-empty">
@@ -355,32 +355,9 @@
                 grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                     action: 'submit'
                 }).then(function(token) {
+                    alert(token);
                     document.getElementById('g-recaptcha-response').value = token;
                     document.getElementById("contact-form").submit();
-                });
-            });
-        });
-        document.getElementById("contact-form-footer").addEventListener("submit", function(e) {
-            e.preventDefault();
-
-            grecaptcha.ready(function() {
-                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
-                    action: 'submit'
-                }).then(function(token) {
-                    document.getElementById('g-recaptcha-response-foot').value = token;
-                    document.getElementById("contact-form-footer").submit();
-                });
-            });
-        });
-        document.getElementById("subscriber-form").addEventListener("submit", function(e) {
-            e.preventDefault();
-
-            grecaptcha.ready(function() {
-                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
-                    action: 'submit'
-                }).then(function(token) {
-                    document.getElementById('g-recaptcha-response-sub').value = token;
-                    document.getElementById("subscriber-form").submit();
                 });
             });
         });
