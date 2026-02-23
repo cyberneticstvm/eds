@@ -315,7 +315,7 @@
             $('form').submit(function(e) {
                 //$(this).find(".btn-submit").attr("disabled", true);
                 $(this).find(".btn-submit").html("Loading...<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>");
-                e.preventDefault();
+                //e.preventDefault();
                 let dis = $(this);
                 let cls = dis.find(".g-recaptcha-response");
                 grecaptcha.ready(function() {
