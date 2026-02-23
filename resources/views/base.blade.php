@@ -77,7 +77,7 @@
             <ul class="mystickyelements-lists mystickyno-minimize">
                 <li id="mystickyelements-social-whatsapp" class="mystickyelements-social-icon-li mystickyelements-social-whatsapp element-desktop-on element-mobile-on">
                     <span class="mystickyelements-social-icon social-whatsapp social-custom" style="background: #26D367">
-                        <a href="https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course" target="_blank" rel="noopener"><i class="zmdi zmdi-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course" target="_blank" rel="noopener"><i class="zmdi zmdi-city"></i></a>
                     </span>
                     <span class="mystickyelements-social-text " style="background: #26D367;">
                         <a href="https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course" target="_blank" rel="noopener">WhatsApp</a>
