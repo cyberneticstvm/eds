@@ -323,7 +323,7 @@
                         action: 'submit'
                     }).then(function(token) {
                         cls.val(token);
-                        alert(dis.attr("href"))
+                        alert(dis.attr("action"))
                     });
                 });
                 //dis.submit();
