@@ -341,7 +341,7 @@ class WebController extends Controller
             "phone" => $request->contact_phone ?? "NA",
             "message" => $request->message ?? "NA"
         ];
-        //Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
+        Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
         return redirect()->route('message');
     }
 
