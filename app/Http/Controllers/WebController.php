@@ -304,6 +304,7 @@ class WebController extends Controller
             $inputs = $request->validate([
                 'contact_email' => 'required|email',
                 'submit_type' => 'required',
+                'g-recaptcha-response' => 'required',
             ]);
             $stype = "Subscription";
         endif;
@@ -313,6 +314,7 @@ class WebController extends Controller
                 'contact_email' => 'required|email',
                 'contact_phone' => 'required',
                 'submit_type' => 'required',
+                'g-recaptcha-response' => 'required',
             ]);
             $stype = "Course Enquiry";
         endif;
@@ -323,6 +325,7 @@ class WebController extends Controller
                 'contact_phone' => 'required',
                 'message' => 'required',
                 'submit_type' => 'required',
+                'g-recaptcha-response' => 'required',
             ]);
             $stype = "Contact";
         endif;
@@ -334,7 +337,7 @@ class WebController extends Controller
             "phone" => $request->contact_phone ?? "NA",
             "message" => $request->message ?? "NA"
         ];
-        //Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
+        Mail::to($this->admin_email)->send(new FormSubmitNotificationEmail($data));
 
         return redirect()->route('message');
     }
