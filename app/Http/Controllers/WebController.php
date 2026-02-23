@@ -22,8 +22,8 @@ class WebController extends Controller
     private $courses, $admin_email;
     function __construct()
     {
-        $this->admin_email = "vijoysasidharan@yahoo.com";
-        //$this->admin_email = "ag.daniel@empiredatasystems.com";
+        //$this->admin_email = "vijoysasidharan@yahoo.com";
+        $this->admin_email = "ag.daniel@empiredatasystems.com";
         $this->courses = Course::where("status", 1)->whereIn('id', [1, 2, 4, 5, 7, 16])->get();
     }
     function index()
