@@ -199,8 +199,8 @@
                             <h3 class="ms-footbar-title text-center mb-2">Contact Daniel</h3>
                             <div class="ms-footer-media">
                                 <div class="card-block">
-                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form")->open() }}
-                                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                                    {{ html()->form('POST')->route('submit.form')->attribute("id", "contact-form-footer")->open() }}
+                                    <input type="hidden" name="g-recaptcha-response-footer" id="g-recaptcha-response-footer">
                                     <input type="hidden" name="submit_type" value="10" />
                                     <fieldset class="text-left">
                                         <div class="form-group is-empty">
@@ -370,6 +370,19 @@
                 }).then(function(token) {
                     alert(token);
                     document.getElementById('g-recaptcha-response-sub').value = token;
+                    document.getElementById("contact-form").submit();
+                });
+            });
+        });
+        document.getElementById("contact-form-footer").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            grecaptcha.ready(function() {
+                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
+                    action: 'submit'
+                }).then(function(token) {
+                    alert(token);
+                    document.getElementById('g-recaptcha-response-footer').value = token;
                     document.getElementById("contact-form").submit();
                 });
             });
