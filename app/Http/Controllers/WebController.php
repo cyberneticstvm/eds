@@ -351,6 +351,7 @@ class WebController extends Controller
             'student_name' => 'required',
             'g-recaptcha-response' => 'required',
         ]);
+        unset($inputs['g-recaptcha-response']);
         if ($request->stype == 1 || $request->stype == 2):
             $location = Location::get($request->ip);
             $inputs["trainer_name"] = $request->trainer_name;
@@ -398,6 +399,7 @@ class WebController extends Controller
             'course_id' => 'required',
             'g-recaptcha-response' => 'required',
         ]);
+        unset($inputs['g-recaptcha-response']);
         //Referral::create($inputs);
         return redirect()->route('message');
     }
