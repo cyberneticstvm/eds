@@ -322,7 +322,6 @@
                     grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                         action: 'submit'
                     }).then(function(token) {
-                        alert(cls)
                         cls.val(token);
                     });
                 });
