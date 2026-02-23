@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="{{ asset('/assets/magnific-popup/magnific-popup.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('/assets/css/mystickyelement.css') }}" />
+
     <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
 
 
@@ -70,7 +72,20 @@
 </head>
 
 <body>
-
+    <div class="mystickyelements-fixed mystickyelements-position-right mystickyelements-position-screen-center mystickyelements-position-mobile-right mystickyelements-on-hover mystickyelements-size-medium mystickyelements-mobile-size-medium mystickyelements-templates-default">
+        <div class="mystickyelement-lists-wrap">
+            <ul class="mystickyelements-lists mystickyno-minimize">
+                <li id="mystickyelements-social-whatsapp" class="mystickyelements-social-icon-li mystickyelements-social-whatsapp element-desktop-on element-mobile-on">
+                    <span class="mystickyelements-social-icon social-whatsapp social-custom" style="background: #26D367">
+                        <a href="https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course" target="_blank" rel="noopener"><i class="zmdi zmdi-whatsapp"></i></a>
+                    </span>
+                    <span class="mystickyelements-social-text " style="background: #26D367;">
+                        <a href="https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course" target="_blank" rel="noopener">WhatsApp</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div id="ms-preload" class="ms-preload">
         <div id="status">
@@ -303,6 +318,8 @@
 
     <script src="{{ asset('/assets/magnific-popup/jquery.magnific-popup.js') }}"></script>
 
+    <script src="{{ asset('/assets/js/mystickyelement.js') }}"></script>
+
     <script src="https://www.google.com/recaptcha/api.js?render={{ config('myconfig.captcha.sitekey') }}"></script>
 
     <script>
@@ -359,44 +376,6 @@
             fixedContentPos: false
         });
     </script>
-    <!--<script>
-        document.getElementById("contact-form").addEventListener("submit", function(e) {
-            e.preventDefault();
-            grecaptcha.ready(function() {
-                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
-                    action: 'submit'
-                }).then(function(token) {
-                    alert(token);
-                    document.querySelector('#contact-form .g-recaptcha-response').value = token;
-                    document.getElementById("contact-form").submit();
-                });
-            });
-        });
-        document.getElementById("subscriber-form").addEventListener("submit", function(e) {
-            e.preventDefault();
-            grecaptcha.ready(function() {
-                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
-                    action: 'submit'
-                }).then(function(token) {
-                    alert(token);
-                    document.querySelector('#subscriber-form .g-recaptcha-response').value = token;
-                    document.getElementById("subscriber-form").submit();
-                });
-            });
-        });
-        document.getElementById("contact-form-footer").addEventListener("submit", function(e) {
-            e.preventDefault();
-            grecaptcha.ready(function() {
-                grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
-                    action: 'submit'
-                }).then(function(token) {
-                    alert(token);
-                    document.querySelector('#contact-form-footer .g-recaptcha-response').value = token;
-                    document.getElementById("contact-form-footer").submit();
-                });
-            });
-        });
-    </script>-->
 </body>
 
 </html>
