@@ -316,18 +316,18 @@
                 //$(this).find(".btn-submit").attr("disabled", true);
                 $(this).find(".btn-submit").html("Loading...<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>");
                 e.preventDefault();
-                let dis = $(this);
-                let cls = dis.find(".g-recaptcha-response");
+                let form = $(this);
+                let cls = form.find(".g-recaptcha-response");
                 grecaptcha.ready(function() {
                     grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
                         action: 'submit'
                     }).then(function(token) {
                         cls.val(token);
                         if (token)
-                            dis.submit();
+                            alert('sdfds')
+                        //form.submit();
                     });
                 });
-
             });
         });
     </script>
