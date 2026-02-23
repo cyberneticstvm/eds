@@ -312,9 +312,17 @@
                 }
             });
 
-            $('form').submit(function() {
+            $('form').submit(function(e) {
                 //$(this).find(".btn-submit").attr("disabled", true);
                 $(this).find(".btn-submit").html("Loading...<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>");
+                e.preventDefault();
+                grecaptcha.ready(function() {
+                    grecaptcha.execute("{{ config('myconfig.captcha.sitekey') }}", {
+                        action: 'submit'
+                    }).then(function(token) {
+                        alert(token)
+                    });
+                });
             });
         });
     </script>
@@ -347,7 +355,7 @@
             fixedContentPos: false
         });
     </script>
-    <script>
+    <!--<script>
         document.getElementById("contact-form").addEventListener("submit", function(e) {
             e.preventDefault();
             grecaptcha.ready(function() {
@@ -384,7 +392,7 @@
                 });
             });
         });
-    </script>
+    </script>-->
 </body>
 
 </html>
