@@ -26,8 +26,6 @@
 
     <link rel="stylesheet" href="{{ asset('/assets/magnific-popup/magnific-popup.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('/assets/css/mystickyelement.css') }}" />
-
     <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
 
 
@@ -72,21 +70,6 @@
 </head>
 
 <body>
-    <div class="mystickyelements-fixed mystickyelements-position-right mystickyelements-position-screen-center mystickyelements-position-mobile-right mystickyelements-on-hover mystickyelements-size-medium mystickyelements-mobile-size-medium mystickyelements-templates-default">
-        <div class="mystickyelement-lists-wrap">
-            <ul class="mystickyelements-lists mystickyno-minimize">
-                <li id="mystickyelements-social-whatsapp" class="mystickyelements-social-icon-li mystickyelements-social-whatsapp element-desktop-on element-mobile-on">
-                    <span class="mystickyelements-social-icon social-whatsapp social-custom" style="background: #26D367">
-                        <a href="https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course" target="_blank" rel="noopener"><i class="zmdi zmdi-city"></i></a>
-                    </span>
-                    <span class="mystickyelements-social-text " style="background: #26D367;">
-                        <a href="https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course" target="_blank" rel="noopener">WhatsApp</a>
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <div id="ms-preload" class="ms-preload">
         <div id="status">
             <div class="spinner">
@@ -318,8 +301,6 @@
 
     <script src="{{ asset('/assets/magnific-popup/jquery.magnific-popup.js') }}"></script>
 
-    <script src="{{ asset('/assets/js/mystickyelement.js') }}"></script>
-
     <script src="https://www.google.com/recaptcha/api.js?render={{ config('myconfig.captcha.sitekey') }}"></script>
 
     <script>
@@ -344,6 +325,17 @@
                             form.submit();
                     });
                 });
+            });
+
+            $("body").append("<div class='wa-chat'></div>");
+            $(".wa-chat").html("<a href='https://api.whatsapp.com/send?phone=16102351850&text=Hello!%20I%20am%20interested%20in%20your%20course' target='_blank'><img src='{{ asset('/assets/img/wa-btn.png') }}' class='img-fluid responsive' alt='' /></a>");
+            $(".wa-chat img").css({
+                'width': '50px',
+                'height': '50px',
+                'z-index': '9999',
+                'position': 'fixed',
+                'top': '45%',
+                'right': '2%'
             });
         });
     </script>
