@@ -66,11 +66,14 @@
 
             <div class="col-xl-6 col-lg-5">
                 <div class="ms-hero-img animated zoomInUp animation-delay-30">
-                    <img src="{{ asset('/assets/img/demo/mock-imac-material2.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('/assets/img/demo/mock-imac-material2.png') }}" alt="Empire Data System Defaul Video" class="img-fluid">
 
-                    <div id="carousel-hero-img" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="card" style="position: absolute;top: 12%;left: 6%;width: 90%;height: 61%;">
+                        <div data-type="youtube" data-video-id="FCZSA_RDyXU?autoplay=1&loop=1&playlist=FCZSA_RDyXU"></div>
+                    </div>
+                    <!-- <div id="carousel-hero-img" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="3000">
 
-                        <!-- Indicators -->
+
                         <ol class="carousel-indicators carousel-indicators-hero-img">
                             <li data-bs-target="#carousel-hero-img" data-bs-slide-to="0" class="active"></li>
                             <li data-bs-target="#carousel-hero-img" data-bs-slide-to="1"></li>
@@ -78,7 +81,7 @@
                         </ol>
 
 
-                        <!-- Wrapper for slides -->
+
                         <div class="carousel-inner" role="listbox">
                             <div data-bs-interval="3000" class="ms-hero-img-slider carousel-item active">
                                 <img src="" alt="" class="img-fluid">
@@ -90,7 +93,7 @@
                                 <img src="" alt="" class="img-fluid">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
