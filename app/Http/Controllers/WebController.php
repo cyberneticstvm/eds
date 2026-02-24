@@ -246,7 +246,7 @@ class WebController extends Controller
         $description = "Read our privacy policy for SQL Server, Azure, Fabric & AI training programs. Learn how we collect, use and protect personal information of our students.";
         $keywords = "";
         $schema = [];
-        return view('policy.privacy', compact('title', 'description', 'keywords', 'shema'));
+        return view('policy.privacy', compact('title', 'description', 'keywords', 'schema'));
     }
 
     function terms_of_service()
