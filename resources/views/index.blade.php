@@ -68,7 +68,7 @@
                 <div class="ms-hero-img animated zoomInUp animation-delay-30">
                     <img src="{{ asset('/assets/img/demo/mock-imac-material2.png') }}" alt="Empire Data System Defaul Video" class="img-fluid">
 
-                    <div class="card" style="position: absolute;top: 12%;left: 6%;width: 90%;height: 61%; background-color: revert;">
+                    <div class="card" style="position: absolute;top: 12%;left: 6%;width: 90%;height: 61%; background-color: #3f424b;">
                         <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="FCZSA_RDyXU"></div>
                     </div>
                     <!-- <div id="carousel-hero-img" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="3000">
