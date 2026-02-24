@@ -69,7 +69,7 @@
                     <img src="{{ asset('/assets/img/demo/mock-imac-material2.png') }}" alt="Empire Data System Defaul Video" class="img-fluid">
 
                     <div class="card" style="position: absolute;top: 12%;left: 6%;width: 90%;height: 61%;">
-                        <div data-type="youtube" data-video-id="FCZSA_RDyXU?autoplay=1&loop=1&playlist=FCZSA_RDyXU"></div>
+                        <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="FCZSA_RDyXU"></div>
                     </div>
                     <!-- <div id="carousel-hero-img" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="3000">
 
