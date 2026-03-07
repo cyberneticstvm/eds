@@ -26,6 +26,7 @@
                                 <h3 class="card-title">Trainer: {{ $feedback->trainer_name }}</h3>
                             </div>
                             <div class="card-body">
+                                <p>Course: {{ $feedback->course->name }}</p>
                                 <blockquote class="blockquote blockquote-color-bg-light withripple">
                                     {{ $feedback->feedback }}
                                     <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>

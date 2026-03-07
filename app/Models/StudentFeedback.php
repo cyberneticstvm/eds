@@ -12,4 +12,9 @@ class StudentFeedback extends Model
     protected $casts = ["feedback_date" => "datetime"];
 
     protected $guarded = [];
+
+    public function course()
+    {
+        return $this->belongsTo(Course::class, 'course_id', 'id');
+    }
 }
