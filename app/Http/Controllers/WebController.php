@@ -319,6 +319,8 @@ class WebController extends Controller
                 'g-recaptcha-response' => 'required',
             ]);
             $stype = "Course Enquiry";
+            $inputs['course'] = $request->txt_course;
+            $inputs['trainer'] = $request->txt_trainer;
             $source = $request->source;
         endif;
         if ($request->submit_type == 10):
