@@ -333,6 +333,7 @@ class WebController extends Controller
             $stype = "Contact";
             $source = $request->source;
         endif;
+        unset($inputs['g-recaptcha-response']);
         FormSubmit::create($inputs);
         $data = [
             "stype" => $stype,
