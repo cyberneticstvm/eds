@@ -12,6 +12,7 @@ use App\Models\Course;
 use App\Models\FormSubmit;
 use App\Models\Referral;
 use App\Models\StudentFeedback;
+use App\Rules\NoUrlAllowed;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -328,7 +329,11 @@ class WebController extends Controller
                 'contact_name' => 'required',
                 'contact_email' => 'required|email',
                 'contact_phone' => 'required',
-                'message' => 'required',
+                'message' => [
+                    'required',
+                    'regex:/^[A-Za-z0-9\s\.\,\-\_]+$/',
+                    new NoUrlAllowed
+                ],
                 'submit_type' => 'required',
                 'g-recaptcha-response' => 'required',
             ]);
