@@ -34,9 +34,15 @@
                             </div>
                         </div>-->
                         <div class="card-body">
-                            <h5 class="color-primary">Course: {{ $feedback->course->name }}</h5>
                             <blockquote class="blockquote blockquote-color-bg-light withripple">
-                                <h3 class="card-title">Trainer: {{ $feedback->trainer_name }}</h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="color-primary">Course: {{ $feedback->course->name }}</h5>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <h5 class="color-warning">Trainer: {{ $feedback->trainer_name }}</h5>
+                                    </div>
+                                </div>
                                 {{ $feedback->feedback }}
                                 <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
                             </blockquote>
