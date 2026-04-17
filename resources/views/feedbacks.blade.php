@@ -37,14 +37,14 @@
                             <blockquote class="blockquote blockquote-color-bg-primary withripple">
                                 <div class="row">
                                     <div class="col-6">
-                                        <h5 class="color-primary">Course: {{ $feedback->course->name }}</h5>
+                                        <h5 class="color-white">Course: {{ $feedback->course->name }}</h5>
                                     </div>
                                     <div class="col-6 text-end">
                                         <h5 class="color-warning">Trainer: {{ $feedback->trainer_name }}</h5>
                                     </div>
                                 </div>
                                 {{ $feedback->feedback }}
-                                <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
+                                <div class="text-end color-white">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
                             </blockquote>
                         </div>
                     </li>
