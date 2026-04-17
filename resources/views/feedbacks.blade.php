@@ -21,7 +21,7 @@
                             <time class="timeline-time" datetime="">{{ $feedback->feedback_date->format('Y') }} <span>{{ $feedback->feedback_date->format('M, d') }}</span></time>
                             <i class="ms-timeline-point"></i>
                         </div>
-                        <div class="card card-primary">
+                        <!--<div class="card card-primary">
                             <div class="card-header">
                                 <h3 class="card-title">Trainer: {{ $feedback->trainer_name }}</h3>
                             </div>
@@ -32,6 +32,14 @@
                                     <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
                                 </blockquote>
                             </div>
+                        </div>-->
+                        <div class="card-body">
+                            <h5 class="color-primary">Course: {{ $feedback->course->name }}</h5>
+                            <blockquote class="blockquote blockquote-color-bg-light withripple">
+                                <h3 class="card-title">Trainer: {{ $feedback->trainer_name }}</h3>
+                                {{ $feedback->feedback }}
+                                <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
+                            </blockquote>
                         </div>
                     </li>
                     @empty
