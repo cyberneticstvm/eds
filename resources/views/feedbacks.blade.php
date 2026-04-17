@@ -34,7 +34,7 @@
                             </div>
                         </div>-->
                         <div class="card-body">
-                            <blockquote class="blockquote blockquote-color-bg-light withripple">
+                            <blockquote class="blockquote blockquote-color-bg-primary withripple">
                                 <div class="row">
                                     <div class="col-6">
                                         <h5 class="color-primary">Course: {{ $feedback->course->name }}</h5>
@@ -43,7 +43,7 @@
                                         <h5 class="color-warning">Trainer: {{ $feedback->trainer_name }}</h5>
                                     </div>
                                 </div>
-                                <div class="bg-info">{{ $feedback->feedback }}</div>
+                                {{ $feedback->feedback }}
                                 <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
                             </blockquote>
                         </div>
