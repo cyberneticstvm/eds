@@ -43,7 +43,7 @@
                                         <h5 class="color-warning">Trainer: {{ $feedback->trainer_name }}</h5>
                                     </div>
                                 </div>
-                                {{ $feedback->feedback }}
+                                <div class="bg-info">{{ $feedback->feedback }}</div>
                                 <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
                             </blockquote>
                         </div>
