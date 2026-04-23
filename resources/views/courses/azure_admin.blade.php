@@ -618,16 +618,19 @@
                                     <time class="timeline-time" datetime="">{{ $feedback->feedback_date->format('Y') }} <span>{{ $feedback->feedback_date->format('M, d') }}</span></time>
                                     <i class="ms-timeline-point"></i>
                                 </div>
-                                <div class="card card-primary">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Trainer: {{ $feedback->trainer_name }}</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <blockquote class="blockquote blockquote-color-bg-light withripple">
-                                            {{ $feedback->feedback }}
-                                            <div class="text-end">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
-                                        </blockquote>
-                                    </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote blockquote-color-bg-primary withripple text-white">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5 class="color-white">Course: {{ $feedback->course->name }}</h5>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <h5 class="color-warning">Trainer: {{ $feedback->trainer_name }}</h5>
+                                            </div>
+                                        </div>
+                                        {{ $feedback->feedback }}
+                                        <div class="text-end color-white">{{ $feedback->student_name }}<br>{{ $feedback->location }}, {{ $feedback->country }}</div>
+                                    </blockquote>
                                 </div>
                             </li>
                             @empty
